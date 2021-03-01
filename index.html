@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Map</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style media="screen">
+body {
+  width: 1680px;
+  margin: 0 auto;
+  /* background-color: rgba(134, 106, 225, 1); */
+  background-color: white;
+  height: 1050px;
+  display: block;
+  position: absolute;
+  cursor: none;
+  overflow: hidden;
+}
+body::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  background: url('images/SIXT.png');
+  height: 100%;
+  display: block;
+  opacity: .2;
+  margin: 0;
+}
+.vulkan {
+  position: absolute;
+  background-image: url("images/vulkan.svg");
+  width: 7.14vw;
+  height: 5.36vw;
+  background-repeat: no-repeat;
+  left: calc(50vw - 3.57vw);
+  top: 4vw;
+}
+.vo {
+  position: absolute;
+  background-image: url("images/vo.svg");
+  background-repeat: no-repeat;
+  width: 227px;
+  height: 180px;
+  left: 43.03%;
+top: 5.54%;
+}
+.green {
+  position: absolute;
+  background-image: url("images/green.svg");
+  width: 4.46vw;
+  height: 6.25vw;
+  background-repeat: no-repeat;
+  left: 7.8vw;
+  top: 18.5vw;
+}
+.celcium {
+  position: absolute;
+  background-image: url("images/celcium.svg");
+  width: 0.95vw;
+  height: 6.96vw;
+  background-repeat: no-repeat;
+  right: 24.4vw;
+  top: 1.5vw;
+}
+.eyecontainer {
+  position: relative;
+  background-image: url("images/eye.svg");
+  width: 4.52vw;
+  height: 2.57vw;
+  background-repeat: no-repeat;
+  margin-left: calc(50vw - 2.26vw);
+  margin-top: 27.5vw;
+}
+.eye {
+  position: absolute;
+  background-image: url("images/pupil.svg");
+  width: 1.61vw;
+  height: 1.61vw;
+  left: 28%;
+  top: 14%;
+  background-repeat: no-repeat;
+}
+.ornament {
+  position: absolute;
+  background-image: url("images/ornament.svg");
+  width: 1832px;
+  height: 1147px;
+  top: 0vw;
+  background-repeat: no-repeat;
+}
+* {
+  text-decoration: none;
+}
+.name {
+  position: absolute;
+  left: 1.5vw;
+}
+h1 {
+  margin-top: 6px;
+  margin-bottom: 3px;
+  font-family: Garamond;
+  font-weight: bold;
+font-size: 89px;
+}
+.name p {
+  margin: 0 auto;
+  margin-left: 6px;
+  font-family: Pragmatica;
+  font-size: 21px;
+line-height: 27px;
+width: 309px;
+}
+.sidepannel {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  /* background-color: red; */
+  width: 100px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.time {
+margin-left: auto;
+width: 52px;
+height: 52px;
+}
+.sun {
+  background-image: url("images/sun.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: .5s;
+}
+.moon {
+  background-image: url("images/moon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  transition: .5s;
+}
+/* .sidepannel p {
+text-align: right;
+  margin: 0 auto;
+  margin-top: 29px;
+  margin-left: auto;
+  width: 53px;
+  font-family: Garamond;
+  font-weight: bold;
+font-size: 40px;
+} */
+
+.sidepannel p {
+  font-family: Garamond;
+  font-weight: bold;
+font-size: 40px;
+margin-top: 20px;
+margin-left: auto;
+}
+.coord {
+  margin-left: auto;
+}
+#cursor {
+  position: absolute;
+  width: 8px;
+height: 8px;
+border-radius: 50%;
+background-color: white;
+}
+#line {
+  position: absolute;
+  width: 1px;
+  height: 2100px;
+  background-color: white;
+}
+#line2 {
+  position: absolute;
+  width: 3360px;
+  height: 1px;
+  background-color: white;
+}
+@font-face {
+   font-family: Pragmatica;
+   src: url(fonts/Pragmatica.otf);
+  }
+    </style>
+
+    <!-- <script type="text/javascript">
+    $(document).ready(function(){
+      $(".time").click(function(){
+        $(this).removeClass("sun");
+          $(this).addClass("moon");
+      });
+  });
+    </script> -->
+
+    <script type="text/javascript">
+
+    $(document).ready(function(){
+      $(".time").click(function(){
+        $(this).toggleClass("moon");
+      });
+
+      $(document).mousemove(function(e) {
+        $('#cursor').css({
+          left:e.pageX - 10,
+          top:e.pageY - 10
+        });
+      });
+
+      $(document).mousemove(function(e) {
+  $('#line').css({
+    left:e.pageX - 6,
+    top:e.pageY - 1050
+  });
+});
+
+$(document).mousemove(function(e) {
+$('#line2').css({
+left:e.pageX - 1680,
+top:e.pageY - 6
+});
+});
+
+      $(document).mousemove(e => {
+	let от_верхнего_края_блока_до_курсора = e.pageY - $('.vulkan').offset().top;
+	$('.coord').text( от_верхнего_края_блока_до_курсора );
+});
+
+  });
+
+  $(document).ready(function(){
+    $(document).mousemove(function(event) {
+      let eye = $(".eye");
+      let x = (eye.offset().left) + (eye.width() / 2);
+      let y = (eye.offset().top) + (eye.height() / 2);
+      let rad = Math.atan2(event.pageX - x, event.pageY - y);
+      let rot = (rad * (180 / Math.PI) * -1) + 180;
+      eye.css({
+        'transform': 'rotate(' + rot + 'deg)'
+      });
+    });
+  })
+    </script>
+  </head>
+  <body>
+
+
+    <div class="sidepannel">
+<div class="time sun">
+</div>
+<p>36&deg;</p>
+<div class="coord"></div>
+    </div>
+
+<div class="name">
+  <h1>Vulcanalia</h1>
+  <p>Карта фестиваля еды, вулканов и богов.</p>
+</div>
+<div class="vo">
+</div>
+<div class="vulkan">
+</div>
+<div class="celcium">
+</div>
+<div class="green">
+</div>
+
+<div class="eyecontainer">
+<div class="eye"></div>
+</div>
+
+<div class="ornament"></div>
+
+<div id="cursor">
+</div>
+<!-- <div id="line"></div>
+<div id="line2"></div> -->
+  </body>
+</html>

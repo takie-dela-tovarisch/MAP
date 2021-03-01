@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style media="screen">
+    body {
+      background-color: red;
+    }
+    .container {
+      position: absolute;
+      right: 100px;
+      width: 300px;
+      height: 600px;
+      background-color: blue;
+      display: flex;
+      flex-direction: column;
+    }
+    .test1 {
+      width: 50px;
+      height: 100px;
+      background-color: red;
+      margin-left: auto;
+    }
+    .container p {
+      font-family: Garamond;
+      font-weight: bold;
+    font-size: 40px;
+    margin-left: auto;
+    }
+    #ok {
+      position: absolute;
+      left: 50%;
+      top: 5%;
+      width: 200px;
+      height: 200px;
+      background-color: blue;
+    }
+    .eyecontainer {
+      position: relative;
+      background-image: url("images/eye.svg");
+      width: 4.52vw;
+      height: 2.57vw;
+      background-repeat: no-repeat;
+      left: 50vw;
+      top: 27.5vw;
+      overflow: hidden;
+    }
+    .eye {
+      position: absolute;
+      background-image: url("images/pupil.svg");
+      width: 1.61vw;
+      height: 1.61vw;
+      left: 33%;
+      top: 21%%;
+      background-repeat: no-repeat;
+    }
+    </style>
+    <script>
+      let balls = document.getElementsByClassName("eye");
+      document.onmousemove = function(){
+        let x = event.clientX * 100 / window.innerWidth + "%";
+        let y = event.clientY * 100 / window.innerHeight + "%";
+
+        for(let i=0;i<2;i++){
+          balls[i].style.left = x;
+          balls[i].style.top = y;
+          balls[i].style.transform = "translate(-"+x+",-"+y+")";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <p id="distance">0</p>
+    <div id="ok">
+
+    </div>
+    <div class="container">
+      <div class="test1">
+      </div>
+      <p>108&deg;</p>
+    </div>
+
+  <div class="eyecontainer">
+    <div class="eye">
+    </div>
+
+</section>
+
+
+  </body>
+</html>
