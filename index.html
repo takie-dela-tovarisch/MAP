@@ -105,6 +105,14 @@ top: 5.54%;
   top: 14%;
   background-repeat: no-repeat;
 }
+.movement {
+  position: relative;
+  /* background-color: red; */
+  height: 2.57vw;
+  width: 3vw;
+  margin-left: calc(2.26vw - 1.5vw);
+  border-radius: 50%;
+}
 .wrapper {
   position: absolute;
   width: 100%;
@@ -171,25 +179,15 @@ height: 52px;
 }
 .eye {
   position: absolute;
-  -webkit-mask: url("file:///C:/Users/1/Documents/GitHub/Boomshh/images/eye.svg");
   width: 4.52vw;
   height: 2.57vw;
-  left: 50vw;
+  left: 47.6vw;
   top: 27.5vw;
   overflow: hidden;
-  background-color: blue;
+  background-color: white;
+  -webkit-clip-path: url(#clip);
+     clip-path: url(#clip);
 }
-/* .sidepannel p {
-text-align: right;
-  margin: 0 auto;
-  margin-top: 29px;
-  margin-left: auto;
-  width: 53px;
-  font-family: Garamond;
-  font-weight: bold;
-font-size: 40px;
-} */
-
 .sidepannel p {
   font-family: Garamond;
   font-weight: bold;
@@ -311,9 +309,13 @@ top:e.pageY - 6
 </div>
 <div class="celcium">
 </div>
+
 <div class="eye">
+  <div class="movement">
 <div class="pupil"></div>
+  </div>
 </div>
+
 <div class="green">
 </div>
 <div class="bog">
@@ -331,5 +333,12 @@ top:e.pageY - 6
 </div>
 <div id="line"></div>
 <div id="line2"></div>
+
+<svg viewBox="0 0 77 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <clipPath id="clip">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M43.4756 0H48.9136V5.4043H54.3459H59.7837V10.8008H65.2161V16.2051H70.6487V21.6035H76.0864V27.002H70.6484L70.6487 32.4043H65.2163H59.7837V37.8027H54.3459H48.9136V43.207H43.4756H38.0432H32.6108H27.1729V37.8027H21.7405H16.3027V32.4043H10.8704H5.43799V27.002H0V21.6035H5.43799V16.2051H10.8704V10.8008H16.3027V5.4043H21.7405H27.1729V0H32.6108H38.0432H43.4756Z" fill="white"/>
+</clipPath>
+</svg>
+
   </body>
 </html>
