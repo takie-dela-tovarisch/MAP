@@ -47,6 +47,23 @@
       top: 27.5vw;
       overflow: hidden;
     }
+    .mask {
+      background-color: black;
+      mask-image:url("images/eye.svg");
+      mask-size: cover;
+      -webkit-mask-image:url("images/eye.svg");
+      -webkit-mask-size:cover;
+      width: 4.52vw;
+      height: 2.57vw;
+    }
+    .pic {
+      mask-type: alpha;
+    width: 301px;
+    height: 260px;
+    -webkit-mask: url("images/oh.svg");
+    background-color: black;
+    position: absolute;
+    }
     .eye {
       position: absolute;
       background-image: url("images/pupil.svg");
@@ -55,6 +72,12 @@
       left: 33%;
       top: 21%%;
       background-repeat: no-repeat;
+    }
+    .circle {
+      position: absolute;
+      width: 4.52vw;
+      height: 2.57vw;
+      background-color: black;
     }
     </style>
     <script>
@@ -72,6 +95,9 @@
     </script>
   </head>
   <body>
+    <div class="pic">
+
+    </div>
     <p id="distance">0</p>
     <div id="ok">
 
@@ -82,9 +108,17 @@
       <p>108&deg;</p>
     </div>
 
-  <div class="eyecontainer">
+<div class="eyecontainer">
+  <div class="mask">
     <div class="eye">
     </div>
+  </div>
+</div>
+
+<div class="mask">
+  <div class="circle">
+  </div>
+</div>
 
 </section>
 
