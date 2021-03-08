@@ -30,7 +30,8 @@ body::before {
 }
 .vulkan {
   position: absolute;
-  background-image: url("images/vulkan.svg");
+  background: url("images/vulkan.svg");
+  background-size: contain;
   width: 7.14vw;
   height: 5.36vw;
   background-repeat: no-repeat;
@@ -48,23 +49,45 @@ top: 5.54%;
 }
 .green {
   position: absolute;
-  background-image: url("images/green.svg");
+  background: url("images/green.svg");
+  background-size: contain;
   width: 4.46vw;
   height: 6.25vw;
   background-repeat: no-repeat;
   left: 7.8vw;
   top: 18.5vw;
 }
+.bog {
+  position: absolute;
+  background: url("images/bog.svg");
+  background-size: contain;
+  width: 3.63vw;
+  height: 7.92vw;
+  background-repeat: no-repeat;
+  left: 26.8vw;
+  top: 18.93vw;
+}
 .celcium {
   position: absolute;
-  background-image: url("images/celcium.svg");
+  background: url("images/celcium.svg");
+  background-size: contain;
   width: 0.95vw;
   height: 6.96vw;
   background-repeat: no-repeat;
   right: 24.4vw;
   top: 1.5vw;
 }
-.eyecontainer {
+.pant {
+  position: absolute;
+  background: url("images/pant.svg");
+  background-size: contain;
+  width: 7.44vw;
+  height: 6.43vw;
+  background-repeat: no-repeat;
+  right: 46.6vw;
+  top: 25vw;
+}
+/* .eyecontainer {
   position: relative;
   background-image: url("images/eye.svg");
   width: 4.52vw;
@@ -72,8 +95,8 @@ top: 5.54%;
   background-repeat: no-repeat;
   margin-left: calc(50vw - 2.26vw);
   margin-top: 27.5vw;
-}
-.eye {
+} */
+.pupil {
   position: absolute;
   background-image: url("images/pupil.svg");
   width: 1.61vw;
@@ -145,6 +168,16 @@ height: 52px;
   background-repeat: no-repeat;
 
   transition: .5s;
+}
+.eye {
+  position: absolute;
+  -webkit-mask: url("file:///C:/Users/1/Documents/GitHub/Boomshh/images/eye.svg");
+  width: 4.52vw;
+  height: 2.57vw;
+  left: 50vw;
+  top: 27.5vw;
+  overflow: hidden;
+  background-color: blue;
 }
 /* .sidepannel p {
 text-align: right;
@@ -240,18 +273,17 @@ top:e.pageY - 6
 
   });
 
-  $(document).ready(function(){
-    $(document).mousemove(function(event) {
-      let eye = $(".eye");
-      let x = (eye.offset().left) + (eye.width() / 2);
-      let y = (eye.offset().top) + (eye.height() / 2);
-      let rad = Math.atan2(event.pageX - x, event.pageY - y);
-      let rot = (rad * (180 / Math.PI) * -1) + 180;
-      eye.css({
-        'transform': 'rotate(' + rot + 'deg)'
-      });
-    });
-  })
+  let balls = document.getElementsByClassName("pupil");
+  document.onmousemove = function(){
+    let x = event.clientX * 100 / window.innerWidth + "%";
+    let y = event.clientY * 100 / window.innerHeight + "%";
+
+    for(let i=0;i<2;i++){
+      balls[i].style.left = x;
+      balls[i].style.top = y;
+      balls[i].style.transform = "translate(-"+x+",-"+y+")";
+    }
+  }
     </script>
   </head>
   <body>
@@ -274,9 +306,18 @@ top:e.pageY - 6
 </div>
 <div class="vulkan">
 </div>
+<div class="pant">
+
+</div>
 <div class="celcium">
 </div>
+<div class="eye">
+<div class="pupil"></div>
+</div>
 <div class="green">
+</div>
+<div class="bog">
+
 </div>
 
 <!-- <div class="eyecontainer">

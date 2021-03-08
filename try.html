@@ -39,28 +39,30 @@
     }
     .eyecontainer {
       position: relative;
-      background-image: url("images/eye.svg");
+      mask-type: alpha;
+      -webkit-mask: url("images/eye.svg");
       width: 4.52vw;
       height: 2.57vw;
       background-repeat: no-repeat;
       left: 50vw;
       top: 27.5vw;
       overflow: hidden;
+      background-color: blue;
     }
     .mask {
       background-color: black;
       mask-image:url("images/eye.svg");
       mask-size: cover;
       -webkit-mask-image:url("images/eye.svg");
-      -webkit-mask-size:cover;
+      -webkit-mask-size: cover;
       width: 4.52vw;
       height: 2.57vw;
     }
     .pic {
       mask-type: alpha;
-    width: 301px;
-    height: 260px;
-    -webkit-mask: url("images/oh.svg");
+      width: 4.52vw;
+      height: 2.57vw;
+    -webkit-mask: url("https://raw.githubusercontent.com/takie-dela-tovarisch/MAP/757bed43001fb13b10ff39ab6034e6021e9bed68/images/eye.svg?token=ARDCTWL4MYCRXCBT6AOMEO3AIZXIU");
     background-color: black;
     position: absolute;
     }
@@ -109,10 +111,8 @@
     </div>
 
 <div class="eyecontainer">
-  <div class="mask">
     <div class="eye">
     </div>
-  </div>
 </div>
 
 <div class="mask">
