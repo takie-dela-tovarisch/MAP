@@ -42,10 +42,40 @@ body::before {
   position: absolute;
   background-image: url("images/vo.svg");
   background-repeat: no-repeat;
-  width: 227px;
-  height: 180px;
-  left: 43.03%;
-top: 5.54%;
+  background-size: contain;
+  width: 13.6vw;
+  height: 10.8vw;
+  left: 43.03vw;
+top: 3.54vw;
+}
+
+.voo {
+  position: absolute;
+  background-image: url("images/voo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 13.45vw;
+  height: 10.60vw;
+  top: 1px;
+  left: 1px;
+  opacity: 0;
+}
+.square {
+  position: absolute;
+  background-color: #EFEFEF;
+}
+.square p {
+  font-size: 13px;
+  text-align: center;
+  font-family: Pragmatica;
+  line-height: 13px;
+  margin-top: 6px;
+}
+.v {
+  top: 6.7vw;
+  left: 4.7vw;
+  width: 4.52vw;
+  height: 2.20vw;
 }
 .green {
   position: absolute;
@@ -67,6 +97,55 @@ top: 5.54%;
   left: 26.8vw;
   top: 18.93vw;
 }
+.fire {
+  position: absolute;
+  overflow: hidden;
+  background: url("images/fire.svg") no-repeat 0 0%;
+  background-size: cover;
+  animation: fire 1s steps(8);
+  animation-play-state: paused;
+  animation-fill-mode: forwards;
+}
+.a {
+  left: 31.2%;
+  top: 14.5%;
+  width: 2.49vw;
+  height: 3.50vw;
+}
+.b {
+  left: 4.7%;
+  top: 53.5%;
+  width: 2.49vw;
+  height: 3.50vw;
+}
+.c {
+  right: 28.4%;
+  top: 39.4%;
+  width: 2.49vw;
+  height: 3.50vw;
+}
+.d {
+  right: 5.7%;
+  top: 84.4%;
+  width: 2.49vw;
+  height: 3.50vw;
+}
+.e {
+  right: 46.3%;
+  top: 82%;
+  width: 2.11vw;
+  height: 2.97vw;
+}
+.f {
+  left: 37.5%;
+  top: 60.6%;
+  width: 2.11vw;
+  height: 2.97vw;
+}
+@keyframes fire {
+  from { background-position: 0 0; }
+    to { background-position: 100% 0; }
+}
 .celcium {
   position: absolute;
   background: url("images/celcium.svg");
@@ -77,6 +156,16 @@ top: 5.54%;
   right: 24.4vw;
   top: 1.5vw;
 }
+.houses {
+  position: absolute;
+  background: url("images/houses.svg");
+  background-size: contain;
+  width: 10.87vw;
+  height: 4.81vw;
+  background-repeat: no-repeat;
+  left: 1.6vw;
+  top: 53.3vw;
+}
 .pant {
   position: absolute;
   background: url("images/pant.svg");
@@ -86,6 +175,68 @@ top: 5.54%;
   background-repeat: no-repeat;
   right: 46.6vw;
   top: 25vw;
+}
+.girl {
+  position: absolute;
+  background: url("images/girl.svg");
+  background-size: contain;
+  width: 3.45vw;
+  height: 7.92vw;
+  background-repeat: no-repeat;
+  right: 16vw;
+  top: 35.3vw;
+}
+.kuzn {
+  position: absolute;
+  background: url("images/kuzn.svg");
+  background-size: contain;
+  width: 6.13vw;
+  height: 5.42vw;
+  background-repeat: no-repeat;
+  right: 11.6vw;
+  top: 14.6vw;
+}
+.cubes {
+  position: absolute;
+  background: url("images/cubes.svg");
+  background-size: contain;
+  width: 6.31vw;
+  height: 5.65vw;
+  background-repeat: no-repeat;
+  right: 25.4vw;
+  top: 50.2vw;
+}
+.koliz {
+  position: absolute;
+  background: url("images/coliz.svg");
+  background-size: contain;
+  width: 7.20vw;
+  height: 5.18vw;
+  background-repeat: no-repeat;
+  right: 31.2vw;
+  top: 33.5vw;
+}
+.stickleft {
+  position: absolute;
+  background: url("images/stick.svg");
+  background-size: contain;
+  width: 1.90vw;
+  height: 9.02vw;
+  background-repeat: no-repeat;
+  left: 31.5vw;
+  top: 45.3vw;
+  transform: rotate(45deg);
+}
+.stickright {
+  position: absolute;
+  background: url("images/stick.svg");
+  background-size: contain;
+  width: 1.90vw;
+  height: 9.02vw;
+  background-repeat: no-repeat;
+  left: 31.9vw;
+  top: 45.3vw;
+  transform: rotate(-45deg);
 }
 /* .eyecontainer {
   position: relative;
@@ -104,20 +255,27 @@ top: 5.54%;
   left: 28%;
   top: 14%;
   background-repeat: no-repeat;
+  background-size: contain;
 }
+
 .movement {
   position: relative;
   /* background-color: red; */
-  height: 2.57vw;
+  height: 2.1vw;
   width: 3vw;
+  margin-top: 0.2vw;
   margin-left: calc(2.26vw - 1.5vw);
   border-radius: 50%;
+}
+* {
+  z-index: 100;
 }
 .wrapper {
   position: absolute;
   width: 100%;
   height: 100%;
   overflow: hidden;
+  z-index:1;
 }
 .ornament {
   position: absolute;
@@ -126,6 +284,7 @@ top: 5.54%;
   height: 1147px;
   top: 0vw;
   background-repeat: no-repeat;
+  z-index: 1;
 }
 * {
   text-decoration: none;
@@ -163,19 +322,34 @@ width: 309px;
 margin-left: auto;
 width: 52px;
 height: 52px;
+
 }
-.sun {
+/* .sun {
   background-image: url("images/sun.svg");
   background-size: contain;
   background-repeat: no-repeat;
   transition: .5s;
+
+} */
+.sun {
+  width: 52px;
+  height: 52px;
+  overflow: hidden;
+  background: url("images/sun.svg") no-repeat 0 0%;
+  background-size: cover;
+  animation: sun 0.6s steps(6);
+  animation-play-state: paused;
+  animation-fill-mode: forwards;
+}
+
+@keyframes sun {
+    from { background-position: 0 0; }
+      to { background-position: 100% 0; }
 }
 .moon {
   background-image: url("images/moon.svg");
   background-size: contain;
   background-repeat: no-repeat;
-
-  transition: .5s;
 }
 .eye {
   position: absolute;
@@ -188,6 +362,17 @@ height: 52px;
   -webkit-clip-path: url(#clip);
      clip-path: url(#clip);
 }
+.white {
+  position: absolute;
+  background: url("images/eye.svg");
+  background-size: contain;
+  width: 4.52vw;
+  height: 2.57vw;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  right: 48vw;
+  top: 27.5vw;
+}
 .sidepannel p {
   font-family: Garamond;
   font-weight: bold;
@@ -199,11 +384,13 @@ margin-left: auto;
   margin-left: auto;
 }
 #cursor {
+  display: block;
   position: absolute;
   width: 8px;
 height: 8px;
 border-radius: 50%;
 background-color: white;
+pointer-events: none;
 }
 #line {
   position: absolute;
@@ -212,6 +399,7 @@ background-color: white;
   top: 0;
   bottom: 0;
   background-color: white;
+  pointer-events: none;
 }
 #line2 {
   position: absolute;
@@ -220,6 +408,7 @@ background-color: white;
   left: 0;
   right: 0;
   background-color: white;
+  pointer-events: none;
 }
 @font-face {
    font-family: Pragmatica;
@@ -240,19 +429,38 @@ background-color: white;
 
     $(document).ready(function(){
       $(".time").click(function(){
-        $(this).toggleClass("moon");
+        $(this).css("animation-play-state", "running");
+        setTimeout(function(){
+        $(".time").toggleClass('moon');
+      }, 1000);
       });
 
       $(document).mousemove(function(e) {
         $('#cursor').css({
-          left:e.pageX - 10,
-          top:e.pageY - 10
+          left:e.pageX - 123,
+          top:e.pageY - 3
         });
       });
 
+      $(".fire").click(function(){
+     $(this).css("animation-play-state", "running");
+});
+
+// $(".vo" || ".green").mouseover(function(){
+//   $(".voo").css("opacity", "1");
+// });
+// WARNING
+
+$(".vo").mouseover(function(){
+  $(".voo").css("opacity", "1");
+});
+$(".vo").mouseout(function(){
+  $(".voo").css("opacity", "0");
+});
+
       $(document).mousemove(function(e) {
   $('#line').css({
-    left:e.pageX - 6,
+    left:e.pageX - 120,
     top:e.pageY - 1050
   });
 });
@@ -260,7 +468,7 @@ background-color: white;
 $(document).mousemove(function(e) {
 $('#line2').css({
 left:e.pageX - 1680,
-top:e.pageY - 6
+top:e.pageY - 0
 });
 });
 
@@ -270,6 +478,33 @@ top:e.pageY - 6
 });
 
   });
+
+  // $(document).mousemove(function(e) {
+  //   let body_size_x = $( window ).width();
+  //   let body_size_y = $( window ).height();
+  //   let half_body_size_x = parseInt(body_size_x / 2);
+  //   let half_body_size_y = parseInt(body_size_y / 2);
+  //   let q_body_size_x = parseInt(half_body_size_x / 2);
+  //   let q_body_size_y = parseInt(half_body_size_y / 2);
+  //   let left_dir = e.pageX;
+  //   let top_dir = e.pageY;
+  //
+  //   let eq1 = left_dir < q_body_size_x;
+  //   let eq2 = left_dir < parseInt (q_body_size_x * 2) ;
+  //   let eq3 = 2 q_body_size_x > left_dir < 3 q_body_size_y;
+  //   let eq4 = 3 q_body_size_x > left_dir < 4 q_body_size_y;
+  //
+  //    if (eq1 && eq3) {
+  //      $(document.body).css('background', 'red');
+  //    } else if (eq1 && eq4) {
+  //      $(document.body).css('background', 'orange');
+  //    } else if (eq2 && eq3) {
+  //      $(document.body).css('background', 'green');
+  //    } else if (eq2 && eq4) {
+  //      $(document.body).css('background', 'blue');
+  //    }
+  //
+  // });
 
   let balls = document.getElementsByClassName("pupil");
   document.onmousemove = function(){
@@ -298,29 +533,53 @@ top:e.pageY - 6
 
 <div class="name">
   <h1>Vulcanalia</h1>
-  <p>Карта фестиваля еды, вулканов и богов.</p>
+  <a href="https://vk.com/ttovarischh"><p>Карта фестиваля еды, вулканов и богов.</p></a>
 </div>
 <div class="vo">
+  <div class="voo"></div>
+  <div class="square v"><p>главный вулкан</p> </div>
 </div>
 <div class="vulkan">
 </div>
 <div class="pant">
-
 </div>
 <div class="celcium">
 </div>
+<div class="girl">
+</div>
+<div class="kuzn">
+</div>
+<div class="cubes">
+</div>
+<div class="koliz">
+</div>
+<div class="houses">
+</div>
+<div class="stickleft"></div>
+<div class="stickright"></div>
 
-<div class="eye">
+<div class="white">
   <div class="movement">
-<div class="pupil"></div>
+  <div class="pupil"></div>
   </div>
 </div>
+
 
 <div class="green">
 </div>
 <div class="bog">
-
 </div>
+
+<div class="fire a"></div>
+<div class="fire b"></div>
+<div class="fire c"></div>
+<div class="fire d"></div>
+<div class="fire e"></div>
+<div class="fire f"></div>
+
+
+
+
 
 <!-- <div class="eyecontainer">
 <div class="eye"></div>
@@ -329,16 +588,15 @@ top:e.pageY - 6
 
 
 
-<div id="cursor">
-</div>
+<div id="cursor"></div>
 <div id="line"></div>
 <div id="line2"></div>
 
-<svg viewBox="0 0 77 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- <svg viewBox="0 0 77 44" fill="none" xmlns="http://www.w3.org/2000/svg">
   <clipPath id="clip">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M43.4756 0H48.9136V5.4043H54.3459H59.7837V10.8008H65.2161V16.2051H70.6487V21.6035H76.0864V27.002H70.6484L70.6487 32.4043H65.2163H59.7837V37.8027H54.3459H48.9136V43.207H43.4756H38.0432H32.6108H27.1729V37.8027H21.7405H16.3027V32.4043H10.8704H5.43799V27.002H0V21.6035H5.43799V16.2051H10.8704V10.8008H16.3027V5.4043H21.7405H27.1729V0H32.6108H38.0432H43.4756Z" fill="white"/>
 </clipPath>
-</svg>
+</svg> -->
 
   </body>
 </html>
