@@ -28,6 +28,16 @@ body::before {
   opacity: .2;
   margin: 0;
 }
+.disco {
+  position: absolute;
+  background: url("images/disco.svg");
+  background-size: contain;
+  width: 9.29vw;
+  height: 6.19vw;
+  background-repeat: no-repeat;
+  right: 1.5vw;
+  top: 25.9vw;
+}
 .vulkan {
   position: absolute;
   background: url("images/vulkan.svg");
@@ -48,6 +58,27 @@ body::before {
   left: 43.03vw;
 top: 3.54vw;
 }
+.f1o {
+  position: absolute;
+  background-image: url("images/f1o.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 8.66vw;
+  height: 4.38vw;
+  left: 28.54vw;
+  top: 10.15vw;
+  z-index: 1;
+
+}
+.f1oo {
+  position: absolute;
+  background-image: url("images/f1oo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 8.66vw;
+  height: 4.38vw;
+  z-index: 1;
+}
 
 .voo {
   position: absolute;
@@ -59,6 +90,7 @@ top: 3.54vw;
   top: 1px;
   left: 1px;
   opacity: 0;
+  transition: 0.5s ease;
 }
 .square {
   position: absolute;
@@ -178,13 +210,20 @@ top: 3.54vw;
 }
 .girl {
   position: absolute;
-  background: url("images/girl.svg");
-  background-size: contain;
+  background: url("images/girl.svg") no-repeat 0 0%;
+  background-size: cover;
+  overflow: hidden;
   width: 3.45vw;
   height: 7.92vw;
   background-repeat: no-repeat;
   right: 16vw;
   top: 35.3vw;
+  animation: girl 2s steps(17);
+  animation-play-state: paused;
+}
+@keyframes girl {
+  from { background-position: 0 0; }
+    to { background-position: 100% 0; }
 }
 .kuzn {
   position: absolute;
@@ -465,6 +504,10 @@ $(".vo").mouseout(function(){
   });
 });
 
+$(".bog").hover(function() {
+  $(".girl").css("animation-play-state", "running");
+});
+
 $(document).mousemove(function(e) {
 $('#line2').css({
 left:e.pageX - 1680,
@@ -569,8 +612,16 @@ top:e.pageY - 0
 </div>
 <div class="bog">
 </div>
+<div class="disco">
+
+</div>
 
 <div class="fire a"></div>
+<div class="f1o">
+<div class="f1oo">
+
+</div>
+</div>
 <div class="fire b"></div>
 <div class="fire c"></div>
 <div class="fire d"></div>
