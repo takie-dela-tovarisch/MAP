@@ -129,14 +129,18 @@ top: 3.54vw;
   left: 26.8vw;
   top: 18.93vw;
 }
+.bog:hover .girl {
+  animation-play-state: running;
+}
 .fire {
   position: absolute;
   overflow: hidden;
-  background: url("images/fire.svg") no-repeat 0 0%;
+  background: url("images/fire.svg") no-repeat 0% 0%;
   background-size: cover;
-  animation: fire 1s steps(8);
+  /* animation: fire 1s steps(8); */
   animation-play-state: paused;
   animation-fill-mode: forwards;
+  animation: firetwo 1s steps(2) running infinite;
 }
 .a {
   left: 31.2%;
@@ -178,6 +182,10 @@ top: 3.54vw;
   from { background-position: 0 0; }
     to { background-position: 100% 0; }
 }
+@keyframes firetwo {
+  from { background-position: 87.8% 0; }
+    to { background-position: 112.5% 0; }
+}
 .celcium {
   position: absolute;
   background: url("images/celcium.svg");
@@ -210,7 +218,8 @@ top: 3.54vw;
 }
 .girl {
   position: absolute;
-  background: url("images/girl.svg") no-repeat 0 0%;
+  background: url("images/girl.svg") no-repeat;
+  background-position: 0 0%;
   background-size: cover;
   overflow: hidden;
   width: 3.45vw;
@@ -511,6 +520,24 @@ color: #FFFFFF;
         });
       });
 
+
+      var timer;
+      $(document).ready(function() {
+          $(".bog").hover(function() {
+              // Change the interval to be appropriate. It's in milliseconds.
+              move_box_interval = setInterval(move_box, 100);
+          });
+
+          // Change this to the appropriate trigger.
+          $(".bog").mouseout(function() {
+              clearInterval(timer);
+          });
+      });
+
+      function move_box() {
+          $(".girl").css("animation-play-state", "running");
+      }
+
       $(".fire").click(function(){
      $(this).css("animation-play-state", "running");
 });
@@ -530,7 +557,7 @@ $(".info").css("opacity", "0");
 // });
 // WARNING
 
-$(".vo").mouseover(function(){
+$(".vo, .vulkan").mouseover(function(){
   $(".voo").css("opacity", "1");
 });
 $(".vo").mouseout(function(){
@@ -544,9 +571,12 @@ $(".vo").mouseout(function(){
   });
 });
 
-$(".bog").hover(function() {
-  $(".girl").css("animation-play-state", "running");
-});
+// $(".bog").mouseover(function() {
+//   $(".girl").css("animation-play-state", "running");
+// });
+// $(".bog").mouseout(function(){
+//   $(".girl").css("background-position", "0 0%");
+// });
 
 $(document).mousemove(function(e) {
 $('#line2').css({
