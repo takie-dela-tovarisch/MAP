@@ -27,7 +27,7 @@
   width: 13.6vw;
   height: 10.8vw;
   left: 43.03vw;
-top: 3.54vw;
+  top: 5.54vh;
 }
 .f1o {
   position: absolute;
@@ -37,7 +37,7 @@ top: 3.54vw;
   width: 8.66vw;
   height: 4.38vw;
   left: 28.54vw;
-  top: 10.15vw;
+  top: 16.15vh;
   z-index: 1;
 }
 .f1oo {
@@ -91,7 +91,7 @@ top: 3.54vw;
       width: 5.81vw;
       height: 5.42vw;
       right: 21.03vw;
-      top: 6.9vw;
+      top: 11vh;
 }
 .ce {
 right: 1vw;
@@ -105,7 +105,7 @@ top: 2.3vw;
       width: 9.57vw;
       height: 9.66vw;
       right: 12.4vw;
-      top: 41.5vw;
+      bottom: 18.3vh;
 }
 .venoo {
   position: absolute;
@@ -135,7 +135,7 @@ top: 2.3vw;
   height: 6.25vw;
   background-repeat: no-repeat;
   left: 7.8vw;
-  top: 18.5vw;
+  top: 29vh;
 }
 .bog {
   position: absolute;
@@ -145,7 +145,7 @@ top: 2.3vw;
   height: 7.92vw;
   background-repeat: no-repeat;
   left: 26.8vw;
-  top: 18.93vw;
+  top: 30.2vh;
 }
 
 .fire {
@@ -223,7 +223,7 @@ top: 2.3vw;
   height: 4.81vw;
   background-repeat: no-repeat;
   left: 1.6vw;
-  top: 53.3vw;
+  bottom: 7.2vh;
 }
 .pant {
   position: absolute;
@@ -293,7 +293,7 @@ top: 2.3vw;
   height: 9.02vw;
   background-repeat: no-repeat;
   left: 31.5vw;
-  top: 45.3vw;
+  bottom: 13.3vh;
   transform: rotate(45deg);
 }
 .stickright {
@@ -304,7 +304,7 @@ top: 2.3vw;
   height: 9.02vw;
   background-repeat: no-repeat;
   left: 31.9vw;
-  top: 45.3vw;
+  bottom: 13.3vh;
   transform: rotate(-45deg);
 }
 /* .eyecontainer {
@@ -441,7 +441,7 @@ height: 52px;
   overflow: hidden;
   background-repeat: no-repeat;
   right: 48vw;
-  top: 27.5vw;
+  top: 43.9vh;
 }
 .sidepannel p {
   font-family: Garamond;

@@ -20,3 +20,26 @@
     background-size: cover;
   }
 }
+@media only screen and (min-width: 1700px) and (max-width: 1950px) {
+  .ornament {
+    top: -3vw;
+  }
+  .vo {
+    top: 0.54vh;
+  }
+  .v {
+    top: 9.7vw;
+  }
+  .veno {
+    bottom: 16.3vh;
+  }
+  .f1o {
+    top: 14.15vh;
+  }
+  .co {
+  top: 7vh;
+  }
+  .ce {
+    top: 5.3vw;
+  }
+}
