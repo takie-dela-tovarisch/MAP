@@ -1,0 +1,22 @@
+@media only screen and (min-width: 1439px) and (max-width: 1679px) {
+  h1 {
+  font-size: 5.7vw;
+  margin-top: 12px;
+  }
+  body {
+    background-color: black;
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 1367px) {
+  .ornament {
+    position: absolute;
+    width: 100.05vw;
+    height: 68.27vw;
+    top: 0vw;
+    left: 0vw;
+    background-repeat: no-repeat;
+    z-index: 1;
+    background-image: url("../images/ornament13.svg");
+    background-size: cover;
+  }
+}
