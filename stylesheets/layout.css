@@ -7,7 +7,7 @@
   height: 6.19vw;
   background-repeat: no-repeat;
   right: 1.5vw;
-  top: 25.9vw;
+  top: 41.3vh;
 }
 .vulkan {
   position: absolute;
@@ -17,7 +17,7 @@
   height: 5.36vw;
   background-repeat: no-repeat;
   left: calc(50vw - 3.57vw);
-  top: 4vw;
+  top: 6.7vh;
 }
 .vo {
   position: absolute;
@@ -213,7 +213,7 @@ top: 2.3vw;
   height: 6.96vw;
   background-repeat: no-repeat;
   right: 24.4vw;
-  top: 1.5vw;
+  top: 2.5vh;
 }
 .houses {
   position: absolute;
@@ -233,7 +233,7 @@ top: 2.3vw;
   height: 6.43vw;
   background-repeat: no-repeat;
   right: 46.6vw;
-  top: 25vw;
+  top: 40vh;
 }
 .girl {
   position: absolute;
@@ -245,7 +245,7 @@ top: 2.3vw;
   height: 7.92vw;
   background-repeat: no-repeat;
   right: 16vw;
-  top: 35.3vw;
+  bottom: 31vh;
 }
 .animate {
   animation: girl 2s steps(17);
@@ -263,7 +263,7 @@ top: 2.3vw;
   height: 5.42vw;
   background-repeat: no-repeat;
   right: 11.6vw;
-  top: 14.6vw;
+  top: 23.5vh;
 }
 .cubes {
   position: absolute;
@@ -273,7 +273,7 @@ top: 2.3vw;
   height: 5.65vw;
   background-repeat: no-repeat;
   right: 25.4vw;
-  bottom: 6.6vw;
+  bottom: 10.7vh;
 }
 .koliz {
   position: absolute;
@@ -283,7 +283,7 @@ top: 2.3vw;
   height: 5.18vw;
   background-repeat: no-repeat;
   right: 31.2vw;
-  top: 33.5vw;
+  bottom: 38vh;
 }
 .stickleft {
   position: absolute;
