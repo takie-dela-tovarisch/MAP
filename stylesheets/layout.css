@@ -5,6 +5,22 @@
   width: 200px;
   height: 100px;
   background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.blue {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  background-color: blue;
+}
+.black {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: black;
 }
 .km {
   font-family: Pragmatica;
@@ -34,24 +50,20 @@
   transform: scale(2);
 }
 .disco {
-  position: absolute;
+  position: relative;
   background: url("../images/disco.svg");
   background-size: contain;
   width: 9.29vw;
   height: 6.19vw;
   background-repeat: no-repeat;
-  right: 1.5vw;
-  top: 41.3vh;
 }
 .vulkan {
-  position: absolute;
+  position: relative;
   background: url("../images/vulkan.svg");
   background-size: contain;
   width: 7.14vw;
   height: 5.36vw;
   background-repeat: no-repeat;
-  left: calc(50vw - 3.57vw);
-  top: 6.7vh;
 }
 .vo {
   position: absolute;
@@ -161,9 +173,120 @@
   margin-left: 0.83vw;
   margin-right: 0.83vw;
 }
+.sq {
+  position: absolute;
+}
+.didi {
+  right: 1.5vw;
+  top: 41.3vh;
+}
+.kuku {
+  right: 11.6vw;
+  top: 23.5vh;
+}
+.cece {
+  top: 3vh;
+  right: 20vw;
+}
+.stst {
+  bottom: 10.6vh;
+    left: 28.7vw;
+}
+.hoho {
+  left: 1.6vw;
+  bottom: 2.2vh;
+}
+.gregre {
+  left: 6.8vw;
+  top: 29vh;
+}
+.bobo {
+  left: 26vw;
+  top: 30.2vh;
+}
+.papa {
+  left: calc(50vw - 4vw);
+  top: 40vh;
+}
+.vuvu {
+  position: absolute;
+  left: 46.3vw;
+  top: 4.1vw;
+}
+.koko {
+  bottom: 34.7vh;
+      right: 31.2vw;
+  }
+.gigi {
+  width: 4.68vw;
+  bottom: 26.2vh;
+  right: 16.7vw;
+}
+.oval {
+  position: relative;
+  background-color: #EFEFEF;
+  margin-left: 0.83vw;
+  margin-right: 0.83vw;
+}
+.dis {
+  margin-left: 1.83vw;
+    margin-right: 1.4vw;
+}
+.ku {
+  margin-left: 0.4vw;
+margin-right: 1.3vw;
+}
+.ce {
+width: 5.73vw;
+}
+.sto {
+  margin-left: 1.7vw;
+margin-right: 1.7vw;
+}
+.gree {
+  width: 7.02vw;
+}
+.bo {
+  width: 4.53vw;
+}
 .v {
-  top: 6.7vw;
-  left: 4.45vw;
+  margin-left: 1.5vw;
+  margin-right: 1.3vw;
+}
+.oval p {
+  font-size: 13px;
+  text-align: center;
+  font-family: Pragmatica;
+  line-height: 0.77vw;
+  margin-top: 1.14vh;
+  /* margin-top: 0.38vw; */
+  padding-bottom: 0.40vw;
+  padding-top: 0.38vw;
+  /* margin-left: 0.83vw;
+  margin-right: 0.83vw; */
+}
+.ho {
+  margin-left: 2.9vw;
+    margin-right: 3.1vw;
+}
+.sticks {
+  position: relative;
+  width: 8vw;
+  height: 12vh;
+}
+.pa {
+  margin-left: 1.5vw;
+  margin-right: 1.3vw;
+}
+.gigigi {
+  /* padding-top: 0.38vw; */
+  width: 4.53vw;
+}
+.kol {
+  /* width: 5.24vw; */
+}
+.v {
+
 }
 .co {
   position: absolute;
@@ -175,10 +298,7 @@
       right: 21.03vw;
       top: 11vh;
 }
-.ce {
-right: 1vw;
-top: 2.3vw;
-}
+
 .veno {
   position: absolute;
       background-image: url(../images/veno.svg);
@@ -215,65 +335,33 @@ top: 2.3vw;
   right: 3.5vw;
   top: 2.5vw;
 }
-.pa {
-  top: 6vw;
-  left: 2.9vw;
-}
-.ku {
-  top: 4.6vw;
-left: 5.8vw;
-}
 .cu {
   bottom: 2vh;
   right: 4vw;
 }
-.bo {
-  bottom: 5vh;
-  right: 2.4vw
-}
-.ho {
-  bottom: 6.9vh;
-  right: 5.9vw;
-}
-.sto {
-  bottom: 3.9vh;
-  right: 3.9vw;
-}
 .kol {
-  bottom: 1.9vh;
-  right: 1.9vw;
 }
 .cloth {
   bottom: 3.9vh;
   right: 1vw;
 }
-.gree {
-  bottom: 4.9vh;
-  right: 1vw;
-}
-.dis {
-  bottom: 5.5vh;
-  right: 1.6vw;
-}
 .green {
-  position: absolute;
+  position: relative;
   background: url("../images/green.svg");
   background-size: contain;
   width: 4.46vw;
   height: 6.25vw;
   background-repeat: no-repeat;
-  left: 7.8vw;
-  top: 29vh;
+  margin-left: 1vw;
 }
 .bog {
-  position: absolute;
+  position: relative;
   background: url("../images/bog.svg");
   background-size: contain;
   width: 3.63vw;
   height: 7.92vw;
   background-repeat: no-repeat;
-  left: 26.8vw;
-  top: 30.2vh;
+  margin-left: 1vw;
 }
 
 .fire {
@@ -334,46 +422,43 @@ left: 5.8vw;
     to { background-position: 112.5% 0; }
 }
 .celcium {
-  position: absolute;
+  position: relative;
   background: url("../images/celcium.svg");
   background-size: contain;
   width: 0.95vw;
   height: 6.96vw;
   background-repeat: no-repeat;
-  right: 24.4vw;
-  top: 2.5vh;
+  margin-left: 3vw;
 }
 .houses {
-  position: absolute;
+  position: relative;
   background: url("../images/houses.svg");
   background-size: contain;
   width: 10.87vw;
   height: 4.81vw;
   background-repeat: no-repeat;
-  left: 1.6vw;
-  bottom: 7.2vh;
+
 }
 .pant {
-  position: absolute;
+  position: relative;
   background: url("../images/pant.svg");
   background-size: contain;
   width: 7.44vw;
   height: 6.43vw;
   background-repeat: no-repeat;
-  right: 46.6vw;
-  top: 40vh;
 }
 .girl {
-  position: absolute;
+  position: relative;
   background: url("../images/girl.svg") no-repeat;
   background-position: 0 0%;
   background-size: cover;
   overflow: hidden;
+  margin-left: 2vw;
   width: 3.45vw;
   height: 7.92vw;
   background-repeat: no-repeat;
-  right: 16vw;
-  bottom: 31vh;
+  /* right: 16vw;
+  bottom: 31vh; */
 }
 .animate {
   animation: girl 2s steps(17);
@@ -384,14 +469,12 @@ left: 5.8vw;
     to { background-position: 100% 0; }
 }
 .kuzn {
-  position: absolute;
+  position: relative;
   background: url("../images/kuzn.svg");
   background-size: contain;
   width: 6.13vw;
   height: 5.42vw;
   background-repeat: no-repeat;
-  right: 11.6vw;
-  top: 23.5vh;
 }
 .cubo {
   position: absolute;
@@ -411,7 +494,7 @@ left: 5.8vw;
   width: 16.23vw;
   height: 13.84vw;
   right: 7vw;
-  top: 26vh;
+  top: 25vh;
 }
 .panto {
   position: absolute;
@@ -419,9 +502,9 @@ left: 5.8vw;
   background-repeat: no-repeat;
   background-size: contain;
   width: 8.47vw;
-  height: 8.07vw;
-  right: 46.8vw;
-  top: 42vh;
+  height: 7.5vw;
+  right: 46vw;
+  top: 41.5vh;
 }
 .greeno {
   position: absolute;
@@ -494,14 +577,12 @@ left: 5.8vw;
   bottom: 10.7vh;
 }
 .koliz {
-  position: absolute;
+  position: relative;
   background: url("../images/coliz.svg");
   background-size: contain;
   width: 7.20vw;
   height: 5.18vw;
   background-repeat: no-repeat;
-  right: 31.2vw;
-  bottom: 38vh;
 }
 .stickleft {
   position: absolute;
@@ -510,8 +591,9 @@ left: 5.8vw;
   width: 1.90vw;
   height: 9.02vw;
   background-repeat: no-repeat;
-  left: 31.5vw;
-  bottom: 13.3vh;
+  left: 3vw;
+  /* left: 31.5vw;
+  bottom: 13.3vh; */
   transform: rotate(45deg);
 }
 .stickright {
@@ -521,8 +603,9 @@ left: 5.8vw;
   width: 1.90vw;
   height: 9.02vw;
   background-repeat: no-repeat;
-  left: 31.9vw;
-  bottom: 13.3vh;
+  left: 3vw;
+  /* left: 31.9vw;
+  bottom: 13.3vh; */
   transform: rotate(-45deg);
 }
 /* .eyecontainer {
