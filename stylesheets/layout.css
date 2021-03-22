@@ -1,4 +1,38 @@
+.draggable {
+  position: absolute;
+  top: 45%;
+  left: 20%;
+  width: 200px;
+  height: 100px;
+  background-color: red;
+}
+.km {
+  font-family: Pragmatica;
+  font-size: 10px;
+  position: absolute;
+  color: white;
+}
 
+/* .anana {
+  position: absolute;
+  background-color: blue;
+  height: 80px;
+  width: 40px;
+  left: 0;
+  top: 45%;
+} */
+.ananaa {
+  position: absolute;
+  background-color: blue;
+  height: 40px;
+  width: 40px;
+  left: 20%;
+  top: 45%;
+  /* transition: 0.1s ease; */
+}
+.ananaa:hover {
+  transform: scale(2);
+}
 .disco {
   position: absolute;
   background: url("../images/disco.svg");
@@ -40,6 +74,56 @@
   top: 16.15vh;
   z-index: 1;
 }
+.f2o {
+  position: absolute;
+  background-image: url("../images/f2o.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 5.88vw;
+  height: 4.58vw;
+  left: 2.54vw;
+  bottom: 37.15vh;
+}
+.f3o {
+  position: absolute;
+  background-image: url("../images/f3o.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 6.01vw;
+  height: 6.84vw;
+  left: 35.54vw;
+  bottom: 28.15vh;
+}
+.f4o {
+  position: absolute;
+  background-image: url("../images/f4o.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 7.06vw;
+  height: 6.49vw;
+  left: 49.54vw;
+  bottom: 10vh;
+}
+.f5o {
+  position: absolute;
+  background-image: url("../images/f5o.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 7.04vw;
+  height: 6.10vw;
+  right: 26vw;
+  top: 39vh;
+}
+.f6o {
+  position: absolute;
+  background-image: url("../images/f6o.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 6.88vw;
+  height: 4.58vw;
+  right: 4vw;
+  bottom: 6.5vh;
+}
 .f1oo {
   position: absolute;
   background-image: url("../images/f1oo.svg");
@@ -79,9 +163,7 @@
 }
 .v {
   top: 6.7vw;
-  left: 4.7vw;
-  width: 4.52vw;
-  height: 2.20vw;
+  left: 4.45vw;
 }
 .co {
   position: absolute;
@@ -107,6 +189,16 @@ top: 2.3vw;
       right: 12.4vw;
       bottom: 18.3vh;
 }
+.diso {
+  position: absolute;
+      background-image: url(../images/diso.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 10.71vw;
+      height: 9.69vw;
+      right: 1.4vw;
+    bottom: 38.3vh;
+}
 .venoo {
   position: absolute;
   background-image: url("../images/venoo.svg");
@@ -124,8 +216,44 @@ top: 2.3vw;
   top: 2.5vw;
 }
 .pa {
-  top: 6.7vw;
-  left: 4.7vw;
+  top: 6vw;
+  left: 2.9vw;
+}
+.ku {
+  top: 4.6vw;
+left: 5.8vw;
+}
+.cu {
+  bottom: 2vh;
+  right: 4vw;
+}
+.bo {
+  bottom: 5vh;
+  right: 2.4vw
+}
+.ho {
+  bottom: 6.9vh;
+  right: 5.9vw;
+}
+.sto {
+  bottom: 3.9vh;
+  right: 3.9vw;
+}
+.kol {
+  bottom: 1.9vh;
+  right: 1.9vw;
+}
+.cloth {
+  bottom: 3.9vh;
+  right: 1vw;
+}
+.gree {
+  bottom: 4.9vh;
+  right: 1vw;
+}
+.dis {
+  bottom: 5.5vh;
+  right: 1.6vw;
 }
 .green {
   position: absolute;
@@ -265,6 +393,96 @@ top: 2.3vw;
   right: 11.6vw;
   top: 23.5vh;
 }
+.cubo {
+  position: absolute;
+  background-image: url(../images/cubo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 11.69vw;
+  height: 10.16vw;
+  right: 22vw;
+  bottom: 5vh;
+}
+.kuzo {
+  position: absolute;
+  background-image: url(../images/kuzo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 16.23vw;
+  height: 13.84vw;
+  right: 7vw;
+  top: 26vh;
+}
+.panto {
+  position: absolute;
+  background-image: url(../images/panto.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 8.47vw;
+  height: 8.07vw;
+  right: 46.8vw;
+  top: 42vh;
+}
+.greeno {
+  position: absolute;
+  background-image: url(../images/greeno.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 9.56vw;
+  height: 9.31vw;
+  left: 5.8vw;
+  top: 34vh;
+}
+.sticko {
+  position: absolute;
+  background-image: url(../images/sticko.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 13.06vw;
+  height: 9.68vw;
+  left: 25.8vw;
+  bottom: 6.4vh;
+}
+.kolizo {
+  position: absolute;
+  background-image: url(../images/kolizo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 12.83vw;
+  height: 8.03vw;
+  right: 30vw;
+  bottom: 32.7vh;
+}
+.bogo {
+  position: absolute;
+  background-image: url(../images/bogo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 9.89vw;
+  height: 8.95vw;
+  left: 24vw;
+  top: 38.7vh;
+}
+.homo {
+  position: absolute;
+  background-image: url(../images/homo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 18.68vw;
+  height: 17.38vw;
+  left: -3.2vw;
+  bottom: -4.6vh;
+}
+.clotho {
+  position: absolute;
+  background-image: url(../images/clotho.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 11.26vw;
+    height: 12.38vw;
+    left: 14.8vw;
+    bottom: 26vh;
+}
 .cubes {
   position: absolute;
   background: url("../images/cubes.svg");
@@ -347,14 +565,21 @@ top: 2.3vw;
   z-index:1;
 }
 .ornament {
-  position: absolute;
-  background-image: url("../images/ornament.svg");
-  width: 100.05vw;
-  height: 68.27vw;
-  top: 0vw;
-  left: 0vw;
+  background-image: url("../images/testtest.png");
+  width: 100%;
+  height: 100%;
   background-repeat: no-repeat;
+  background-size: 100% 100%;
   z-index: 1;
+}
+.mb {
+  position: absolute;
+  background-image: url("../images/mb.svg");
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  max-height: 100vh;
 }
 * {
   text-decoration: none;
@@ -364,7 +589,7 @@ top: 2.3vw;
   left: 1.5vw;
 }
 h1 {
-  margin-top: 6px;
+  margin-top: 15px;
   margin-bottom: 3px;
   font-family: Garamond;
   font-weight: bold;
@@ -453,14 +678,29 @@ margin-left: auto;
 .coord {
   margin-left: auto;
 }
-#cursor {
+.cursor {
   display: block;
   position: absolute;
+border-radius: 50%;
+pointer-events: none;
+}
+.normal {
   width: 8px;
 height: 8px;
-border-radius: 50%;
 background-color: white;
-pointer-events: none;
+transform-origin: center center;
+transition: transform 0.5s ease;
+}
+
+.active {
+  /* border: 0.01vw solid white; */
+  background-color: transparent;
+  transform-origin: center center;
+  transform: scale(6);
+  transition: transform 0.5s ease;
+}
+.cursot::after {
+  border: 1px solid white;
 }
 #line {
   position: absolute;

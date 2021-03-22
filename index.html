@@ -16,7 +16,7 @@ body {
   /* height: 900px; */
   display: block;
   position: relative;
-  /* cursor: none; */
+  cursor: none;
   overflow: hidden;
 }
 body::before {
@@ -25,7 +25,7 @@ body::before {
   left: 0;
   top: 0;
   right: 0;
-  background: url('images/SIXT.png');
+  /* background: url('images/SIXT.png'); */
   height: 100%;
   display: block;
   opacity: .2;
@@ -52,12 +52,6 @@ body::before {
       }, 1000);
       });
 
-      $(document).mousemove(function(e) {
-        $('#cursor').css({
-          left:e.pageX - 0,
-          top:e.pageY - 3
-        });
-      });
 
 
 $(".fire").click(function(){
@@ -101,12 +95,6 @@ $(".f1o, .fire.a").mouseover(function(){
 $(".f1o, .fire.a").mouseout(function(){
   $(".f1oo").css("opacity", "0");
 });
-      $(document).mousemove(function(e) {
-  $('#line').css({
-    left:e.pageX - -4,
-    top:e.pageY - 1050
-  });
-});
 
 
   $(".bog").mouseover(function() {
@@ -116,47 +104,123 @@ $(".f1o, .fire.a").mouseout(function(){
   }, 2000);
   });
 
+  $(".pant, .white, .koliz, .fire, .green, .vulkan, .houses, .bog, .girl, .stickleft, .stickright, .cubes, .disco, .kuzn, .celcium").mouseover(function() {
+    $(".cursor").addClass("active");
+  });
+
+  $(".pant, .white, .koliz, .fire, .green, .vulkan, .houses, .bog, .girl, .stickleft, .stickright, .cubes, .disco, .kuzn, .celcium").mouseout(function() {
+    $(".cursor").addClass("normal");
+    setTimeout(function(){
+    $(".cursor").removeClass("active");
+  }, 10);
+  });
+
+
+//   $(".anana").mouseover(function(e) {
+// $(".anana").css({
+// left:e.pageX,
+// });
+// });
+
+// $(document).mousemove(function(e) {
+//   $(".anana").mouseover(function() {
+//     $(".anana").css({
+//     left:e.pageX,
+//   });
+//   });
+// });
+
 
 $(document).mousemove(function(e) {
 $('#line2').css({
 left:e.pageX - 1680,
 top:e.pageY - 0
 });
+$('#line').css({
+left:e.pageX - -4,
+top:e.pageY - 1050
+});
+$(".cursor.normal").css({
+  left:e.pageX - -1,
+  top:e.pageY - 3
+});
+$(".cursor.active").css({
+  left:e.pageX - -1,
+  top:e.pageY - 3
+});
+$(".km").css({
+  left:e.pageX - -10,
+  top:e.pageY - -6
+});
+// $(".cursor.active").css({
+// left:e.pageX - 23,
+// top:e.pageY - 25
+// });
 });
 
-      $(document).mousemove(e => {
-	let от_верхнего_края_блока_до_курсора = parseInt(e.pageY - $('.vulkan').offset().top);
-	$('.coord').text( от_верхнего_края_блока_до_курсора );
-});
+
 
   });
 
-  // $(document).mousemove(function(e) {
-  //   let body_size_x = $( window ).width();
-  //   let body_size_y = $( window ).height();
-  //   let half_body_size_x = parseInt(body_size_x / 2);
-  //   let half_body_size_y = parseInt(body_size_y / 2);
-  //   let q_body_size_x = parseInt(half_body_size_x / 2);
-  //   let q_body_size_y = parseInt(half_body_size_y / 2);
-  //   let left_dir = e.pageX;
-  //   let top_dir = e.pageY;
-  //
-  //   let eq1 = left_dir < q_body_size_x;
-  //   let eq2 = left_dir < parseInt (q_body_size_x * 2) ;
-  //   let eq3 = 2 q_body_size_x > left_dir < 3 q_body_size_y;
-  //   let eq4 = 3 q_body_size_x > left_dir < 4 q_body_size_y;
-  //
-  //    if (eq1 && eq3) {
-  //      $(document.body).css('background', 'red');
-  //    } else if (eq1 && eq4) {
-  //      $(document.body).css('background', 'orange');
-  //    } else if (eq2 && eq3) {
-  //      $(document.body).css('background', 'green');
-  //    } else if (eq2 && eq4) {
-  //      $(document.body).css('background', 'blue');
-  //    }
-  //
-  // });
+  $(document).mousemove(function(e) {
+    let body_size_x = $( window ).width();
+    let body_size_y = $( window ).height();
+    let half_body_size_x = parseInt(body_size_x / 2);
+    let half_body_size_y = parseInt(body_size_y / 2);
+    let q_body_size_x = parseInt(half_body_size_x / 2);
+    let q_body_size_y = parseInt(half_body_size_y / 2);
+    let left_dir = e.pageX;
+    let top_dir = e.pageY;
+
+    let eq1 = left_dir < q_body_size_x;
+    let eq2 = left_dir < parseInt (q_body_size_x * 2) ;
+    let eq3 = left_dir < parseInt (q_body_size_x * 3) ;
+    let eq4 = left_dir < parseInt (q_body_size_x * 4) ;
+
+    let eq5 = top_dir < q_body_size_y;
+    let eq6 = top_dir < parseInt (q_body_size_y * 2) ;
+    let eq7 = top_dir < parseInt (q_body_size_y * 3) ;
+    let eq8 = top_dir < parseInt (q_body_size_y * 4) ;
+
+    let kmm = parseInt ((left_dir + top_dir) / 6)
+
+    $(".km").html(kmm + ' расстояние от города')
+
+     if (eq1 && eq5) {
+       $(".degree").html('40&deg;');
+     } else if (eq2 && eq5) {
+       $(".degree").html('43&deg;');
+     } else if (eq3 && eq5) {
+       $(".degree").html('42&deg;');
+     } else if (eq4 && eq5) {
+       $(".degree").html('39&deg;');
+     } else if (eq1 && eq6) {
+       $(".degree").html('38&deg;');
+     } else if (eq2 && eq6) {
+       $(".degree").html('41&deg;');
+     } else if (eq3 && eq6) {
+       $(".degree").html('40&deg;');
+     } else if (eq4 && eq6) {
+       $(".degree").html('38&deg;');
+     } else if (eq1 && eq7) {
+       $(".degree").html('37&deg;');
+     } else if (eq2 && eq7) {
+       $(".degree").html('38&deg;');
+     } else if (eq3 && eq7) {
+       $(".degree").html('36&deg;');
+     } else if (eq4 && eq7) {
+       $(".degree").html('35&deg;');
+     } else if (eq1 && eq8) {
+       $(".degree").html('36&deg;');
+     } else if (eq2 && eq8) {
+       $(".degree").html('37&deg;');
+     } else if (eq3 && eq8) {
+       $(".degree").html('35&deg;');
+     } else if (eq4 && eq8) {
+       $(".degree").html('34&deg;');
+     }
+
+  });
 
   let balls = document.getElementsByClassName("pupil");
   document.onmousemove = function(){
@@ -170,18 +234,26 @@ top:e.pageY - 0
     }
   }
     </script>
+
+    <script type="text/javascript">
+    $(window).resize(function() {
+     if ($(window).height() < 320 && $(window).width() > 568) {
+        alert('Дорогой друг! Ты масштабировал окно браузера слишком увлеченно и сломал сайт. Исправься.');
+     }
+   });
+    </script>
   </head>
   <body>
     <div class="wrapper">
+      <!-- <div class="mb">
+      </div> -->
       <div class="ornament"></div>
     </div>
 
-    <div class="sidepannel">
-<div class="time sun">
+<div class="sidepannel">
+      <div class="time sun"></div>
+      <p class="degree">36&deg;</p>
 </div>
-<p>36&deg;</p>
-<div class="coord"></div>
-    </div>
 
 <div class="name">
   <h1>Vulcanalia</h1>
@@ -189,42 +261,73 @@ top:e.pageY - 0
 </div>
 <div class="vo">
   <div class="voo"></div>
-  <div class="square v"><p>главный <br>вулкан</p> </div>
+  <div class="square v"><p>главный<br>вулкан</p> </div>
 </div>
 <div class="vulkan">
 </div>
+
+<div class="panto">
+  <div class="square pa">
+  <p>главный<br>храм</p>
+  </div>
+</div>
 <div class="pant">
 </div>
-<div class="square pa">
-<p>главный <br>храм</p>
-</div>
+
 
 <div class="celcium">
 </div>
 <div class="co">
   <div class="square ce">
-  <p>великий <br>термометр</p>
+  <p>великий<br>термометр</p>
   </div>
 </div>
 
 <div class="veno">
-  <div class="venoo">
-  </div>
+  <div class="venoo"></div>
   <div class="square gi">
-  <p>зона <br>Венеры</p>
+  <p>зона<br>Венеры</p>
   </div>
 </div>
 <div class="girl">
 </div>
 
-
+<div class="kuzo">
+<div class="square ku">
+  <p>кузница<br>бога</p>
+</div>
+</div>
 <div class="kuzn">
+</div>
+
+<div class="cubo">
+  <div class="square cu">
+    <p>зона игр</p>
+  </div>
 </div>
 <div class="cubes">
 </div>
+
+<div class="kolizo">
+  <div class="square kol">
+    <p>амфитеатр</p>
+  </div>
+</div>
 <div class="koliz">
 </div>
+
+<div class="homo">
+  <div class="square ho">
+    <p>спальная<br>зона</p>
+  </div>
+</div>
 <div class="houses">
+</div>
+
+<div class="sticko">
+  <div class="square sto">
+    <p>детская<br>арена</p>
+  </div>
 </div>
 <div class="stickleft"></div>
 <div class="stickright"></div>
@@ -235,10 +338,31 @@ top:e.pageY - 0
   </div>
 </div>
 
-
+<div class="greeno">
+  <div class="square gree">
+    <p>божественный<br>росток</p>
+  </div>
+</div>
 <div class="green">
 </div>
+
+<div class="clotho">
+  <div class="square cloth">
+    <p>солнечно-тканевая<br>зона</p>
+  </div>
+</div>
+
+<div class="bogo">
+  <div class="square bo">
+    <p>зона<br>Вулкана</p>
+  </div>
+</div>
 <div class="bog">
+</div>
+<div class="diso">
+  <div class="square dis">
+    <p>тусовочная<br>зона</p>
+  </div>
 </div>
 <div class="disco">
 
@@ -246,9 +370,23 @@ top:e.pageY - 0
 
 <div class="fire a"></div>
 <div class="f1o">
-<div class="f1oo">
+<div class="f1oo"></div>
+</div>
+
+<div class="f2o">
 
 </div>
+<div class="f3o">
+
+</div>
+<div class="f4o">
+
+</div>
+<div class="f5o">
+
+</div>
+<div class="f6o">
+
 </div>
 <div class="fire b"></div>
 <div class="fire c"></div>
@@ -267,9 +405,7 @@ top:e.pageY - 0
 
 
 
-<div id="cursor"></div>
-<div id="line"></div>
-<div id="line2"></div>
+
 
 <!-- <svg viewBox="0 0 77 44" fill="none" xmlns="http://www.w3.org/2000/svg">
   <clipPath id="clip">
@@ -281,6 +417,19 @@ top:e.pageY - 0
 <div class="cross"></div>
 <h1>Информация</h1>
 </div>
+
+<!-- <div class="anana">
+
+</div>
+<div class="draggable">
+</div>
+<div class="ananaa"></div> -->
+
+
+<div class="cursor normal"></div>
+<div id="line"></div>
+<div id="line2"></div>
+<div class="km"></div>
 
   </body>
 </html>
