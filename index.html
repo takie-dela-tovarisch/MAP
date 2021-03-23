@@ -25,7 +25,7 @@ body::before {
   left: 0;
   top: 0;
   right: 0;
-  /* background: url('images/SIXT.png'); */
+  background: url('images/SIXT.png');
   height: 100%;
   display: block;
   opacity: .2;
@@ -61,7 +61,15 @@ $(".fire").click(function(){
         $(".fire.start").addClass("burning");
    }, 1000);
 
+   setTimeout(function(){
+       $(".cow").addClass("block");
+  }, 2000);
+
 });
+
+$(".cow").hover(function(){
+  $(this).removeClass("block");
+  });
 
 
 $(".girl").click(function(){
@@ -116,19 +124,14 @@ $(".f1o, .fire.a").mouseout(function(){
   });
 
 
-//   $(".anana").mouseover(function(e) {
-// $(".anana").css({
-// left:e.pageX,
-// });
-// });
 
-// $(document).mousemove(function(e) {
-//   $(".anana").mouseover(function() {
-//     $(".anana").css({
-//     left:e.pageX,
-//   });
-//   });
-// });
+  // $(".draggable").mouseover(function(event) {
+  //
+  //   $(".ananaa").css({
+  //   left:event.pageX,
+  //
+  // });
+  // });
 
 
 $(document).mousemove(function(e) {
@@ -152,6 +155,13 @@ $(".km").css({
   left:e.pageX - -10,
   top:e.pageY - -6
 });
+if ($('.draggableble').is(":hover")) {
+  $(".moveit").css({
+  left:event.pageX,
+});
+} else {
+  $(".moveit").css('left', '16.5vw')
+}
 // $(".cursor.active").css({
 // left:e.pageX - 23,
 // top:e.pageY - 25
@@ -222,6 +232,24 @@ $(".km").css({
 
   });
 
+  // $(document).mousemove(function(e) {
+  //   let d_size_x = $(".draggable").width();
+  //   let d_size_y = $(".draggable").height();
+  //   let half_d_size_x = parseInt(d_size_x / 2);
+  //   let left_dir = e.pageX;
+  //   let top_dir = e.pageY;
+  //
+  //   let dd1 = left_dir < half_body_size_x;
+  //   let dd2 = left_dir > half_body_size_x;
+  //
+  //
+  //   if (dd1) {
+  //     $(".ananaa").css('background-color', 'black');
+  //   } else if (dd2) {
+  //     $(".ananaa").html('background-color', 'green');
+  //   }
+  // });
+
   let balls = document.getElementsByClassName("pupil");
   document.onmousemove = function(){
     let x = event.clientX * 100 / window.innerWidth + "%";
@@ -237,7 +265,7 @@ $(".km").css({
 
     <script type="text/javascript">
     $(window).resize(function() {
-     if ($(window).height() < 700 && $(window).width() > 1024) {
+     if ($(window).height() < 400 && $(window).width() > 1024) {
         alert('Дорогой друг! Ты масштабировал окно браузера слишком увлеченно и сломал сайт. Исправься.');
      }
    });
@@ -267,7 +295,6 @@ $(".km").css({
   <div class="vulkan"></div>
   <div class="oval v"><p>главный<br>вулкан</p></div>
 </div>
-
 
 <div class="panto">
 </div>
@@ -373,12 +400,6 @@ $(".km").css({
 </div>
 
 
-<div class="clotho">
-  <div class="square cloth">
-    <p>солнечно-тканевая<br>зона</p>
-  </div>
-</div>
-
 <div class="bogo">
 
 </div>
@@ -426,6 +447,9 @@ $(".km").css({
 <div class="fire e"></div>
 <div class="fire f"></div>
 
+<div class="cow none">
+</div>
+
 
 
 
@@ -450,14 +474,24 @@ $(".km").css({
 <h1>Информация</h1>
 </div>
 
-<!-- <div class="anana">
+<!-- <div class="draggable">
 </div> -->
 
-<!-- <div class="draggable">
-  <div class="blue"></div>
-  <div class="black"></div>
+
+    <div class="moveit">
+      <div class="clothes"></div>
+    </div>
+    <div class="draggableble">
+      <div class="straight"></div>
+    </div>
+
+  <div class="square cloth">
+    <p>солнечно-тканевая<br>зона</p>
+  </div>
 </div>
-<div class="ananaa"></div> -->
+
+
+<!-- <div class="ananaa"></div> -->
 
 
 <div class="cursor normal"></div>

@@ -28,26 +28,12 @@
   position: absolute;
   color: white;
 }
-
-/* .anana {
-  position: absolute;
-  background-color: blue;
-  height: 80px;
-  width: 40px;
-  left: 0;
-  top: 45%;
-} */
 .ananaa {
   position: absolute;
   background-color: blue;
   height: 40px;
   width: 40px;
-  left: 20%;
-  top: 45%;
   /* transition: 0.1s ease; */
-}
-.ananaa:hover {
-  transform: scale(2);
 }
 .disco {
   position: relative;
@@ -228,6 +214,15 @@
   margin-left: 0.83vw;
   margin-right: 0.83vw;
 }
+.cloth {
+  top: 65.5vh;
+left: 16vw;
+}
+.momo {
+  position: relative;
+  height: 5.36vw;
+  width: 7.68vw;
+}
 .dis {
   margin-left: 1.83vw;
     margin-right: 1.4vw;
@@ -341,9 +336,47 @@ margin-right: 1.7vw;
 }
 .kol {
 }
-.cloth {
-  bottom: 3.9vh;
-  right: 1vw;
+.clotho {
+  position: absolute;
+  background-image: url(../images/clotho.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 11.26vw;
+    height: 12.38vw;
+    /* left: 14.8vw;
+    bottom: 26vh; */
+}
+.clothes {
+  position: absolute;
+  background: url("../images/cloth.svg");
+  background-size: contain;
+  width: 7.68vw;
+  height: 5.36vw;
+  background-repeat: no-repeat;
+  left: 0;
+}
+.moveit {
+  position: absolute;
+  top: 56vh;
+  left: 16.5vw;
+  transition: 0.3s ease;
+}
+.draggableble {
+  position: absolute;
+  /* background-color: blue; */
+  top: 56vh;
+  left: 16.5vw;
+  width: 7.68vw;
+  height: 5.36vw;
+  /* opacity: 0.5; */
+}
+.straight {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 0.3vw;
+  width: 7.14vw;
+  background-color: black;
 }
 .green {
   position: relative;
@@ -363,7 +396,20 @@ margin-right: 1.7vw;
   background-repeat: no-repeat;
   margin-left: 1vw;
 }
-
+.cow {
+  position: absolute;
+  background-color: green;
+  width: 20px;
+  height: 20px;
+  top: 10vw;
+  left: 30vw;
+}
+.none {
+  display: none;
+}
+.block {
+  display: block;
+}
 .fire {
   position: absolute;
   overflow: hidden;
@@ -556,16 +602,7 @@ margin-right: 1.7vw;
   left: -3.2vw;
   bottom: -4.6vh;
 }
-.clotho {
-  position: absolute;
-  background-image: url(../images/clotho.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 11.26vw;
-    height: 12.38vw;
-    left: 14.8vw;
-    bottom: 26vh;
-}
+
 .cubes {
   position: absolute;
   background: url("../images/cubes.svg");
