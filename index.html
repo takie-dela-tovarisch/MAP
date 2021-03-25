@@ -61,15 +61,19 @@ $(".fire").click(function(){
         $(".fire.start").addClass("burning");
    }, 1000);
 
-   setTimeout(function(){
-       $(".cow").addClass("block");
-  }, 1200);
+  //  setTimeout(function(){
+  //      $(".cow").addClass("block");
+  // }, 1200);
 
 });
 
 $(".cow").hover(function(){
   $(this).addClass("kill");
   });
+
+  if ($(".a").hasClass(".burning")) {
+  $(".cow").addClass("block");
+}
 
 
 $(".girl").click(function(){
@@ -420,6 +424,14 @@ if ($('.draggableble').is(":hover")) {
     <p>тусовочная<br>зона</p>
   </div>
 </div>
+<div class="cows oh">
+  <div class="cow lol">
+  </div>
+  <div class="cow lal">
+  </div>
+  <div class="cow lel">
+  </div>
+</div>
 
 <div class="fire a"></div>
 <div class="f1o">
@@ -447,12 +459,16 @@ if ($('.draggableble').is(":hover")) {
 <div class="fire e"></div>
 <div class="fire f"></div>
 
-<div class="cow lol">
-</div>
-<div class="cow lal">
-</div>
-<div class="cow lel">
-</div>
+
+
+<!-- <div class="cows uh">
+  <div class="cow lol">
+  </div>
+  <div class="cow lal">
+  </div>
+  <div class="cow lel">
+  </div>
+</div> -->
 
 
 

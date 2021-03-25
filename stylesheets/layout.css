@@ -406,17 +406,27 @@ overflow: hidden;
   opacity: 0;
   transition: 0.5s;
 }
+.cows {
+  position: absolute;
+  /* background-color: blue; */
+  width: 10vw;
+    height: 16vh;
+}
+.oh {
+  left: 27.5vw;
+    top: 5vw;
+}
 .lol {
-  top: 11vw;
-    left: 28vw;
+  top: 0vw;
+    left: 3vw;
 }
 .lal {
-  top: 5.5vw;
-  left: 30.8vw;
+  bottom: 0vw;
+  left: 0vw;
 }
 .lel {
-  top: 10vw;
-    left: 35vw;
+  bottom: 0vw;
+    right: 0vw;
 }
 .kill {
   animation: sheep 1s steps(10);
