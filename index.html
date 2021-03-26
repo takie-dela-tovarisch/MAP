@@ -61,13 +61,9 @@ $(".fire").click(function(){
         $(".fire.start").addClass("burning");
    }, 1000);
 
-  //  setTimeout(function(){
-  //      $(".cow").addClass("block");
-  // }, 1200);
-
   setTimeout(function(){
     if ($(".fire.a").hasClass("burning")) {
-    $(".cow").addClass("block");
+    $(".cows.oh").addClass("block");
   }
   }, 1200);
 });
@@ -76,11 +72,14 @@ $(".fire").click(function(){
 
 $(".cow").hover(function(){
   $(this).addClass("kill");
-  });
 
-//   if ($(".fire.a").hasClass("burning")) {
-//   $(".cow").addClass("block");
-// }
+//   setTimeout(function(){
+//     if ($(".lol, .lel, .lal").hasClass("kill")) {
+//     $(".cows").removeClass("block");
+//   }
+// }, 3000);
+
+  });
 
 
 $(".girl").click(function(){
@@ -94,10 +93,10 @@ $(".info").css("opacity", "0");
 });
 
 
-$(".vo, .vulkan").mouseover(function(){
+$(".vo, .vuvu").mouseover(function(){
   $(".voo").css("opacity", "1");
 });
-$(".vo").mouseout(function(){
+$(".vo, .vuvu").mouseout(function(){
   $(".voo").css("opacity", "0");
 });
 
@@ -138,7 +137,12 @@ $(".f1o, .fire.a").mouseout(function(){
   });
 
 
-
+  $(".bog, .girl").mouseover(function() {
+    $(".cursor").addClass("active");
+  });
+  $(".bog, .girl").mouseout(function() {
+    $(".cursor").removeClass("active");
+  });
   // $(".draggable").mouseover(function(event) {
   //
   //   $(".ananaa").css({
@@ -181,18 +185,40 @@ if ($('.draggableble').is(":hover")) {
 // top:e.pageY - 25
 // });
 
-if ($('.bog').is(":hover")) {
-  $(".cursor").addClass("active");
-} else {
-  $(".cursor").removeClass("active")
-}
 // $(".cursor.active").css({
 // left:e.pageX - 23,
 // top:e.pageY - 25
 // });
+
+// if ($('.sq.gregre').is(":hover")) {
+//   leaff.css({
+//     '-webkit-transform': 'rotate(' + rot + 'deg)',
+//     '-moz-transform': 'rotate(' + rot + 'deg)',
+//     '-ms-transform': 'rotate(' + rot + 'deg)',
+//     'transform': 'rotate(' + rot + 'deg)'
+//   });
+// } else {
+//   $(document.body).css("background-color", "black")
+// }
 });
 
-
+$(document).mousemove(function (event) {
+  let leaff = $(".leaftwo, .leafone");
+  let x = (leaff.offset().left) + (leaff.width() / 2);
+  let y = (leaff.offset().top) + (leaff.height() / 2);
+  let rad = Math.atan2(event.pageX - x, event.pageY - y);
+  let rot = (rad * (180 / Math.PI) * -1) + 180;
+  if ($('.sq.gregre').is(":hover")) {
+    leaff.css({
+      '-webkit-transform': 'rotate(' + rot + 'deg)',
+      '-moz-transform': 'rotate(' + rot + 'deg)',
+      '-ms-transform': 'rotate(' + rot + 'deg)',
+      'transform': 'rotate(' + rot + 'deg)'
+    });
+  } else {
+    $(".leafone, .leaftwo").css({'transform' : 'rotate('+ 0 +'deg)'});
+  }
+});
 
   });
 
@@ -285,6 +311,20 @@ if ($('.bog').is(":hover")) {
       balls[i].style.transform = "translate(-"+x+",-"+y+")";
     }
   }
+
+    // $(document).mousemove(function(event) {
+    //   let leaff = $(".leaftwo, .leafone");
+    //   let x = (leaff.offset().left) + (leaff.width() / 2);
+    //   let y = (leaff.offset().top) + (leaff.height() / 2);
+    //   let rad = Math.atan2(event.pageX - x, event.pageY - y);
+    //   let rot = (rad * (180 / Math.PI) * -1) + 180;
+    //   leaff.css({
+    //     '-webkit-transform': 'rotate(' + rot + 'deg)',
+    //     '-moz-transform': 'rotate(' + rot + 'deg)',
+    //     '-ms-transform': 'rotate(' + rot + 'deg)',
+    //     'transform': 'rotate(' + rot + 'deg)'
+    //   });
+    // });
     </script>
 
     <script type="text/javascript">
@@ -417,10 +457,13 @@ if ($('.bog').is(":hover")) {
 
 </div>
 <div class="sq gregre">
-  <div class="green"></div>
-  <div class="oval gree">
-    <p>божественный<br>росток</p>
+  <div class="green">
+    <div class="leafone"></div>
+    <div class="leaftwo"></div>
   </div>
+  <!-- <div class="oval gree">
+    <p>божественный<br>росток</p>
+  </div> -->
 </div>
 
 
@@ -499,21 +542,6 @@ if ($('.bog').is(":hover")) {
 </div> -->
 
 
-
-
-
-
-<!-- <svg viewBox="0 0 77 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <clipPath id="clip">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M43.4756 0H48.9136V5.4043H54.3459H59.7837V10.8008H65.2161V16.2051H70.6487V21.6035H76.0864V27.002H70.6484L70.6487 32.4043H65.2163H59.7837V37.8027H54.3459H48.9136V43.207H43.4756H38.0432H32.6108H27.1729V37.8027H21.7405H16.3027V32.4043H10.8704H5.43799V27.002H0V21.6035H5.43799V16.2051H10.8704V10.8008H16.3027V5.4043H21.7405H27.1729V0H32.6108H38.0432H43.4756Z" fill="white"/>
-</clipPath>
-</svg> -->
-
-<div class="info venus">
-<div class="cross"></div>
-<h1>Информация</h1>
-</div>
-
 <!-- <div class="draggable">
 </div> -->
 
@@ -531,8 +559,21 @@ if ($('.bog').is(":hover")) {
 </div>
 
 
-<!-- <div class="ananaa"></div> -->
 
+
+<!-- <div class="ananaa"></div> -->
+<div class="info venus">
+  <div class="upperinfo">
+      <h1>Информация</h1>
+      <div class="cross"></div>
+  </div>
+<h2>Зона Венеры</h2>
+<div class="venusimg">
+
+</div>
+<p>Что может быть романтичнее ужина при свечах?<br> Верно, ничего.  Живое олицетворение любви&nbsp;—&nbsp;это античная богиня Венера. Она же по&nbsp;совместительству еще&nbsp;и&nbsp;любимая женщина бога Вулкана.</p>
+ <p>Древние римляне во время проведения фестиваля Вулканалия обыкновенно работали при&nbsp;свечах, вероятно, чтобы умилостивить главного виновника торжества.  Мы в&nbsp;свою очередь предлагаем Вам отвлечься&nbsp;от работы и&nbsp;насладиться благотворным влиянием огня вместе со своей второй половинкой.</p>
+</div>
 
 <div class="cursor normal"></div>
 <div id="line"></div>
