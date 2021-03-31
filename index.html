@@ -2,11 +2,12 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
     <link rel="stylesheet" href="stylesheets/style.css">
     <title>Map</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style media="screen">
-body {
+body, html {
   width: 100vw;
   height: 100vh;
   /* width: 1440px; */
@@ -64,6 +65,9 @@ $(".fire").click(function(){
   setTimeout(function(){
     if ($(".fire.a").hasClass("burning")) {
     $(".cows.oh").addClass("block");
+    setTimeout(function(){
+      $(".cows.oh").css("opacity", "1");
+    }, 2000);
   }
   }, 1200);
 });
@@ -143,6 +147,14 @@ $(".f1o, .fire.a").mouseout(function(){
   $(".bog, .girl").mouseout(function() {
     $(".cursor").removeClass("active");
   });
+
+  $(".papa, .white").mouseover(function() {
+    $(".bog, .gregre").css('opacity', '0.5');
+  });
+  $(".papa, .white").mouseout(function() {
+    $(".bog, .gregre").css('opacity', '1');
+  });
+
   // $(".draggable").mouseover(function(event) {
   //
   //   $(".ananaa").css({
@@ -180,26 +192,19 @@ if ($('.draggableble').is(":hover")) {
 } else {
   $(".moveit").css('left', '16.5vw')
 }
-// $(".cursor.active").css({
-// left:e.pageX - 23,
-// top:e.pageY - 25
-// });
 
-// $(".cursor.active").css({
-// left:e.pageX - 23,
-// top:e.pageY - 25
-// });
+if ($('.wow').is(":hover")) {
+  $(".cubes").css({
+  left:event.pageX,
+  top:event.pageY
+});
+} else {
+  $(".cubes").css({
+    left: 67 + "vw",
+    top: 80 + "vh"
+  });
+}
 
-// if ($('.sq.gregre').is(":hover")) {
-//   leaff.css({
-//     '-webkit-transform': 'rotate(' + rot + 'deg)',
-//     '-moz-transform': 'rotate(' + rot + 'deg)',
-//     '-ms-transform': 'rotate(' + rot + 'deg)',
-//     'transform': 'rotate(' + rot + 'deg)'
-//   });
-// } else {
-//   $(document.body).css("background-color", "black")
-// }
 });
 
 $(document).mousemove(function (event) {
@@ -207,7 +212,7 @@ $(document).mousemove(function (event) {
   let x = (leaff.offset().left) + (leaff.width() / 2);
   let y = (leaff.offset().top) + (leaff.height() / 2);
   let rad = Math.atan2(event.pageX - x, event.pageY - y);
-  let rot = (rad * (180 / Math.PI) * -1) + 180;
+  let rot = (rad * (45 / Math.PI) * -1) + 45;
   if ($('.sq.gregre').is(":hover")) {
     leaff.css({
       '-webkit-transform': 'rotate(' + rot + 'deg)',
@@ -231,6 +236,7 @@ $(document).mousemove(function (event) {
     let q_body_size_y = parseInt(half_body_size_y / 2);
     let left_dir = e.pageX;
     let top_dir = e.pageY;
+
 
     let eq1 = left_dir < q_body_size_x;
     let eq2 = left_dir < parseInt (q_body_size_x * 2) ;
@@ -403,13 +409,16 @@ $(document).mousemove(function (event) {
   </div>
 </div>
 
-<div class="cubo">
-  <div class="square cu">
-    <p>зона игр</p>
+<div class="wow">
+  <div class="cubo">
+    <div class="square cu">
+      <p>зона игр</p>
+    </div>
+  </div>
+  <div class="cubes">
   </div>
 </div>
-<div class="cubes">
-</div>
+
 
 <div class="kolizo">
 </div>
