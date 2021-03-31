@@ -1,3 +1,28 @@
+body, html {
+  width: 100vw;
+  height: 100vh;
+  /* width: 1440px; */
+  margin: 0 auto;
+  background-color: rgba(134, 106, 225, 1);
+  /* background-color: white; */
+  /* height: 900px; */
+  display: block;
+  position: relative;
+  cursor: none;
+  overflow: hidden;
+}
+body::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  /* background: url('images/SIXT.png'); */
+  height: 100%;
+  display: block;
+  opacity: .2;
+  margin: 0;
+}
 .draggable {
   position: absolute;
   top: 45%;
@@ -41,10 +66,17 @@ div {
 .disco {
   position: relative;
   background: url("../images/disco.svg");
-  background-size: contain;
+  background-size: cover;
   width: 9.29vw;
   height: 6.19vw;
   background-repeat: no-repeat;
+}
+.disanim {
+  animation: disco 1s steps(8) infinite;
+}
+@keyframes disco {
+  from { background-position: 0 0; }
+    to { background-position: 100% 0; }
 }
 .vulkan {
   position: relative;
@@ -435,11 +467,19 @@ transition: transform 0.5s;
 .bog {
   position: relative;
   background: url("../images/bog.svg");
-  background-size: contain;
+  background-size: cover;
   width: 3.63vw;
   height: 7.92vw;
   background-repeat: no-repeat;
   margin-left: 1vw;
+}
+.boganim {
+  animation: bog 1.5s steps(11) infinite alternate;
+
+}
+@keyframes bog {
+  from { background-position: 0 0; }
+    to { background-position: 100% 0; }
 }
 .cow {
   position: absolute;
@@ -587,6 +627,12 @@ overflow: hidden;
   height: 6.43vw;
   background-repeat: no-repeat;
 }
+.pantnight {
+  background: url("../images/pantnight.svg");
+  height: 7.44vw;
+  width: 7.44vw;
+  background-size: contain;
+}
 .girl {
   position: relative;
   background: url("../images/girl.svg") no-repeat;
@@ -603,6 +649,12 @@ overflow: hidden;
 .animate {
   animation: girl 2s steps(17);
   /* animation-play-state: paused; */
+}
+.selfanimate {
+  background: url("../images/candle.svg") no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  animation: girl 2s steps(17);
 }
 @keyframes girl {
   from { background-position: 0 0; }
@@ -757,6 +809,8 @@ margin-right: 2vw;
   right: 30vw;
   bottom: 32.7vh;
 }
+
+
 .bogo {
   position: absolute;
   background-image: url(../images/bogo.svg);
@@ -812,10 +866,18 @@ top: 80vh;
 .koliz {
   position: relative;
   background: url("../images/coliz.svg");
-  background-size: contain;
+  background-size: cover;
   width: 7.20vw;
-  height: 5.18vw;
+  height: 7.08vw;
   background-repeat: no-repeat;
+}
+.kolizanime {
+  animation: koliz 1s steps(6) infinite;
+
+}
+@keyframes koliz {
+    from { background-position: 0 0; }
+      to { background-position: 100% 0; }
 }
 .stickleft {
   position: absolute;
@@ -827,8 +889,28 @@ top: 80vh;
   left: 3vw;
   /* left: 31.5vw;
   bottom: 13.3vh; */
-  transform: rotate(45deg);
+  transform: rotate(51deg);
 }
+.leftanim {
+  animation: stickleft 2s infinite;
+
+}
+@keyframes stickleft {
+  0% {
+    transform: rotate(51deg);
+  }
+  33% {
+    transform: rotate(45deg);
+  }
+  66% {
+    transform: rotate(69deg);
+  }
+  100% {
+    transform: rotate(51deg);
+  }
+
+}
+
 .stickright {
   position: absolute;
   background: url("../images/stick.svg");
@@ -839,7 +921,27 @@ top: 80vh;
   left: 3vw;
   /* left: 31.9vw;
   bottom: 13.3vh; */
-  transform: rotate(-45deg);
+  transform: rotate(-51deg);
+
+}
+.rightanim {
+  animation: stickright 2s infinite;
+
+}
+@keyframes stickright {
+  0% {
+    transform: rotate(-51deg);
+  }
+  33% {
+    transform: rotate(-45deg);
+  }
+  66% {
+    transform: rotate(-69deg);
+  }
+  100% {
+    transform: rotate(-51deg);
+  }
+
 }
 /* .eyecontainer {
   position: relative;
@@ -859,6 +961,10 @@ top: 80vh;
   top: 14%;
   background-repeat: no-repeat;
   background-size: contain;
+}
+.pupilnight {
+  background-image: url("../images/pupilnight.svg");
+
 }
 
 .movement {
@@ -994,6 +1100,9 @@ height: 52px;
   right: 48vw;
   top: 43.9vh;
 }
+.whitenight {
+  background: url("../images/eyenight.svg");
+}
 .sidepannel p {
   font-family: Garamond;
   font-weight: bold;
@@ -1085,9 +1194,17 @@ margin-top: 0.45vw;
   height: 2.08vw;
   background-repeat: no-repeat;
   right: 0;
-  bottom: 0.8vw;
+  bottom: 1.3vw;
+  /* background-color: blue; */
 }
-.cross:hover {
+.crossarea {
+  position: absolute;
+  width: 4vw;
+  height: 4vw;
+  right: 0;
+  bottom: -0.5vw;
+}
+.crossarea:hover {
   opacity: 0.6;
 }
 .info h1 {

@@ -2,36 +2,12 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="stylesheets/style.css">
     <title>Map</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style media="screen">
-body, html {
-  width: 100vw;
-  height: 100vh;
-  /* width: 1440px; */
-  margin: 0 auto;
-  background-color: rgba(134, 106, 225, 1);
-  /* background-color: white; */
-  /* height: 900px; */
-  display: block;
-  position: relative;
-  cursor: none;
-  overflow: hidden;
-}
-body::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  /* background: url('images/SIXT.png'); */
-  height: 100%;
-  display: block;
-  opacity: .2;
-  margin: 0;
-}
+
     </style>
 
     <!-- <script type="text/javascript">
@@ -51,6 +27,20 @@ body::before {
         setTimeout(function(){
         $(".time").toggleClass('moon');
       }, 1000);
+
+      setTimeout(function(){
+        if ($(".time").hasClass("sun")) {
+        $(".pant").addClass("pantnight");
+        $(".papa").css('top', '38vh');
+        $(document.body).css('background-color', 'black');
+        $(".white").addClass("whitenight");
+        $(".pupil").addClass("pupilnight");
+
+
+
+
+      }
+      }, 1200);
       });
 
 
@@ -91,17 +81,29 @@ $(".info").css("left", "0");
 $(".info").css("opacity", "1");
 });
 
-$(".cross").click(function(){
+
+$(".crossarea").click(function(){
+  $(".cursor").addClass("active");
 $(".info").css("left", "-33.33vw");
 $(".info").css("opacity", "0");
+});
+
+$(".crossarea").mouseover(function(){
+  $(".cursor").addClass("active");
+});
+$(".crossarea").mouseout(function(){
+  $(".cursor").removeClass("active");
 });
 
 
 $(".vo, .vuvu").mouseover(function(){
   $(".voo").css("opacity", "1");
+  $(".v").css("opacity", "0.5");
 });
 $(".vo, .vuvu").mouseout(function(){
   $(".voo").css("opacity", "0");
+  $(".v").css("opacity", "1");
+
 });
 
 $(".veno, .girl").mouseover(function(){
@@ -126,21 +128,42 @@ $(".f1o, .fire.a").mouseout(function(){
   }, 2000);
   });
 
+  $(".girl").mouseover(function() {
+    $(".girl").addClass("selfanimate");
+    setTimeout(function(){
+    $(".girl").removeClass("selfanimate");
+  }, 2000);
+  });
+
   $(".vuvu").mouseover(function() {
     $(".vulkan").addClass("vulactive");
     $(".kuzn").addClass("anikuzn");
     $(".celcium").addClass("anicelc");
     $(".houses").addClass("anihouse");
     $(".girl").addClass("animate");
+    $(".stickleft").addClass("leftanim");
+    $(".stickright").addClass("rightanim");
+    $(".koliz").addClass("kolizanime");
+    $(".bog").addClass("boganim");
+
+
+
     setTimeout(function(){
     $(".vulkan").removeClass("vulactive");
     $(".girl").removeClass("animate");
     $(".kuzn").removeClass("anikuzn");
+    $(".stickleft").removeClass("leftanim");
+    $(".stickright").removeClass("rightanim");
+    $(".koliz").removeClass("kolizanime");
   }, 2000);
 
   setTimeout(function(){
     $(".celcium").removeClass("anicelc");
 }, 1500);
+
+setTimeout(function(){
+  $(".bog").removeClass("boganim");
+}, 3000);
 
 setTimeout(function(){
   $(".houses").removeClass("anihouse");
@@ -150,9 +173,34 @@ setTimeout(function(){
 
   $(".kuku").mouseover(function() {
     $(".kuzn").addClass("anikuzn");
+    $(".disco").css('opacity', '0.2');
+    $(".sticks").css('opacity', '0.2');
     setTimeout(function(){
-    $(".kuzn").removeClass("anikuzn");
+    $(".disco").removeClass("pale");
   }, 2000);
+  })
+  $(".kuku").mouseout(function() {
+    $(".disco").css('opacity', '1');
+    $(".sticks").css('opacity', '1');
+
+  })
+
+  $(".bog").mouseover(function() {
+    $(".bog").addClass("boganim");
+    setTimeout(function(){
+    $(".bog").removeClass("boganim");
+  }, 3000);
+  });
+
+  $(".koliz").mouseover(function() {
+    $(".koliz").addClass("kolizanime");
+    $(".kol").css('opacity', '0.5');
+    setTimeout(function(){
+    $(".koliz").removeClass("kolizanime");
+  }, 2000);
+  });
+  $(".koliz").mouseout(function() {
+    $(".kol").css('opacity', '1');
   });
 
   $(".celcium").mouseover(function() {
@@ -160,6 +208,24 @@ setTimeout(function(){
     setTimeout(function(){
     $(".celcium").removeClass("anicelc");
   }, 1500);
+  });
+
+  $(".disco").mouseover(function() {
+    $(".disco").addClass("disanim");
+    setTimeout(function(){
+    $(".disco").removeClass("disanim");
+  }, 1500);
+  });
+
+
+  $(".stst").mouseover(function() {
+    $(".stickleft").addClass("leftanim");
+    $(".stickright").addClass("rightanim");
+
+    setTimeout(function(){
+      $(".stickleft").removeClass("leftanim");
+      $(".stickright").removeClass("rightanim");
+  }, 2000);
   });
 
   $(".houses").mouseover(function() {
@@ -184,21 +250,13 @@ setTimeout(function(){
   });
 
 
-  $(".bog, .girl, .papa, .white, .vuvu, .gregre, .moveit, .draggableble, .hoho, .cece, .wow, .kuku").mouseover(function() {
+  $(".koko, .fire, .bog, .girl, .papa, .white, .vuvu, .gregre, .moveit, .draggableble, .hoho, .cece, .wow, .kuku").mouseover(function() {
     $(".cursor").addClass("active");
   });
-  $(".bog, .girl, .papa, .white, .vuvu, .gregre, .moveit, .draggableble, .hoho, .cece, .wow, .kuku").mouseout(function() {
+  $(".koko, .fire, .bog, .girl, .papa, .white, .vuvu, .gregre, .moveit, .draggableble, .hoho, .cece, .wow, .kuku").mouseout(function() {
     $(".cursor").removeClass("active");
   });
 
-  $(".papa, .white").mouseover(function() {
-    $(".oval.pa").css("opacity", "0.5");
-    $(".bobo, .gregre, .gigi, .moveit, .draggable, .cloth, .hoho, .koko, .cece, .kuku, .didi, .wow, .stst, .vuvu").css('opacity', '0.2');
-  });
-  $(".papa, .white").mouseout(function() {
-    $(".oval.pa").css("opacity", "1");
-    $(".bobo, .gregre, .gigi, .moveit, .draggable, .cloth, .hoho, .koko, .cece, .kuku, .didi, .wow, .stst, .vuvu").css('opacity', '1');
-  });
 
   // $(".sq.didi").mouseover(function() {
   //   $(".lightning").css('display', 'block');
@@ -428,6 +486,12 @@ $(document).mousemove(function (event) {
         alert('Дорогой друг! Ты масштабировал окно браузера слишком увлеченно и сломал сайт. Исправься.');
      }
    });
+   $(window).resize(function() {
+    if ($(window).height() < 768 && $(window).width() < 1024) {
+       alert('Дорогой друг! Ты масштабировал окно браузера слишком увлеченно и сломал сайт. Исправься.');
+    }
+  });
+
     </script>
   </head>
   <body>
@@ -669,8 +733,10 @@ $(document).mousemove(function (event) {
 <!-- <div class="ananaa"></div> -->
 <div class="info venus">
   <div class="upperinfo">
-      <h1>Информация</h1>
+    <h1>Информация</h1>
+    <div class="crossarea">
       <div class="cross"></div>
+    </div>
   </div>
 <h2>Зона Венеры</h2>
 <div class="venusimg">
