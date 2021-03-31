@@ -232,10 +232,6 @@ top: 41.5vh;
   width: 960px;
   height: 1136px;
 }
-html, body {
-  width: 960px;
-  height: 1136px;
-}
 .name h1 {
   font-size: 6.3vw;
   margin-top: 7px;

@@ -82,7 +82,7 @@ div {
   position: relative;
   background: url("../images/vulkan.svg");
   background-size: cover;
-  width: 7.136vw;
+  width: 7.14vw;
   height: 6.95vw;
   background-repeat: no-repeat;
   /* background-color: blue; */
@@ -403,7 +403,7 @@ margin-right: 1.7vw;
   position: absolute;
   top: 56vh;
   left: 16.5vw;
-  transition: 0.3s ease;
+  transition: 0.5s ease;
 }
 .draggableble {
   position: absolute;
