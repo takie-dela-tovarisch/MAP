@@ -10,6 +10,9 @@
   justify-content: center;
   align-items: center;
 }
+div {
+  transition: opacity 0.5s ease;
+}
 .blue {
   position: relative;
   width: 100px;
@@ -206,7 +209,7 @@
 .vuvu {
   position: absolute;
   left: 46.3vw;
-  top: 4.1vw;
+  top: 1.1vw;
 }
 .koko {
   bottom: 34.7vh;
@@ -552,7 +555,7 @@ overflow: hidden;
 }
 .anicelc {
   animation: celcium 1.5s steps(23) infinite;
-  
+
 }
 @keyframes celcium {
   from { background-position: 0 0; }

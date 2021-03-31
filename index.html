@@ -184,17 +184,19 @@ setTimeout(function(){
   });
 
 
-  $(".bog, .girl").mouseover(function() {
+  $(".bog, .girl, .papa, .white").mouseover(function() {
     $(".cursor").addClass("active");
   });
-  $(".bog, .girl").mouseout(function() {
+  $(".bog, .girl, .papa, .white").mouseout(function() {
     $(".cursor").removeClass("active");
   });
 
   $(".papa, .white").mouseover(function() {
+    $(".oval.pa").css("opacity", "0.5");
     $(".bobo, .gregre, .gigi, .moveit, .draggable, .cloth, .hoho, .koko, .cece, .kuku, .didi, .wow, .stst, .vuvu").css('opacity', '0.2');
   });
   $(".papa, .white").mouseout(function() {
+    $(".oval.pa").css("opacity", "1");
     $(".bobo, .gregre, .gigi, .moveit, .draggable, .cloth, .hoho, .koko, .cece, .kuku, .didi, .wow, .stst, .vuvu").css('opacity', '1');
   });
 
