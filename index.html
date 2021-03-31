@@ -26,7 +26,7 @@ body::before {
   left: 0;
   top: 0;
   right: 0;
-  background: url('images/SIXT.png');
+  /* background: url('images/SIXT.png'); */
   height: 100%;
   display: block;
   opacity: .2;
@@ -126,6 +126,49 @@ $(".f1o, .fire.a").mouseout(function(){
   }, 2000);
   });
 
+  $(".vuvu").mouseover(function() {
+    $(".vulkan").addClass("vulactive");
+    $(".kuzn").addClass("anikuzn");
+    $(".celcium").addClass("anicelc");
+    $(".houses").addClass("anihouse");
+    $(".girl").addClass("animate");
+    setTimeout(function(){
+    $(".vulkan").removeClass("vulactive");
+    $(".girl").removeClass("animate");
+    $(".kuzn").removeClass("anikuzn");
+  }, 2000);
+
+  setTimeout(function(){
+    $(".celcium").removeClass("anicelc");
+}, 1500);
+
+setTimeout(function(){
+  $(".houses").removeClass("anihouse");
+
+}, 2500);
+  });
+
+  $(".kuku").mouseover(function() {
+    $(".kuzn").addClass("anikuzn");
+    setTimeout(function(){
+    $(".kuzn").removeClass("anikuzn");
+  }, 2000);
+  });
+
+  $(".celcium").mouseover(function() {
+    $(".celcium").addClass("anicelc");
+    setTimeout(function(){
+    $(".celcium").removeClass("anicelc");
+  }, 1500);
+  });
+
+  $(".houses").mouseover(function() {
+    $(this).addClass("anihouse");
+    setTimeout(function(){
+    $(".houses").removeClass("anihouse");
+  }, 2500);
+  });
+
   $(".sq.bobo").mouseover(function() {
     $(".oval.bo").css("opacity", "0.5");
   });
@@ -133,11 +176,11 @@ $(".f1o, .fire.a").mouseout(function(){
     $(".oval.bo").css("opacity", "1");
   });
 
-  $(".sq.gigi").click(function() {
+  $(".sq.gigi").mouseover(function() {
     $(".oval.gigigi").css("opacity", "0.5");
-    setTimeout(function(){
+  });
+  $(".sq.gigi").mouseout(function() {
     $(".oval.gigigi").css("opacity", "1");
-  }, 400);
   });
 
 
@@ -149,11 +192,34 @@ $(".f1o, .fire.a").mouseout(function(){
   });
 
   $(".papa, .white").mouseover(function() {
-    $(".bog, .gregre").css('opacity', '0.5');
+    $(".bobo, .gregre, .gigi, .moveit, .draggable, .cloth, .hoho, .koko, .cece, .kuku, .didi, .wow, .stst, .vuvu").css('opacity', '0.2');
   });
   $(".papa, .white").mouseout(function() {
-    $(".bog, .gregre").css('opacity', '1');
+    $(".bobo, .gregre, .gigi, .moveit, .draggable, .cloth, .hoho, .koko, .cece, .kuku, .didi, .wow, .stst, .vuvu").css('opacity', '1');
   });
+
+  // $(".sq.didi").mouseover(function() {
+  //   $(".lightning").css('display', 'block');
+  // });
+  $(".disco").one('mouseover', function(){
+  $('.lightning').css('display', 'block');
+  setTimeout(function(){
+  $(".lightning").css('display', 'none');
+}, 400);
+setTimeout(function(){
+$(".lightning").css('display', 'block');
+}, 500);
+setTimeout(function(){
+$(".lightning").css('display', 'none');
+}, 700);
+setTimeout(function(){
+$(".lightning").css('display', 'block');
+}, 800);
+setTimeout(function(){
+$(".lightning").css('display', 'none');
+}, 900);
+
+});
 
   // $(".draggable").mouseover(function(event) {
   //
@@ -193,17 +259,17 @@ if ($('.draggableble').is(":hover")) {
   $(".moveit").css('left', '16.5vw')
 }
 
-if ($('.wow').is(":hover")) {
-  $(".cubes").css({
-  left:event.pageX,
-  top:event.pageY
-});
-} else {
-  $(".cubes").css({
-    left: 67 + "vw",
-    top: 80 + "vh"
-  });
-}
+// if ($('.wow').is(":hover")) {
+//   $(".cubeo").css({
+//   left:event.pageX,
+//   top:event.pageY
+// });
+// } else {
+//   $(".cubeo").css({
+//     left: 68.2 + "vw",
+//     top: 84.5 + "vh"
+//   });
+// }
 
 });
 
@@ -224,8 +290,25 @@ $(document).mousemove(function (event) {
     $(".leafone, .leaftwo").css({'transform' : 'rotate('+ 0 +'deg)'});
   }
 });
-
   });
+
+
+  $(document).mousemove(function (event) {
+    let now = $(".cubeo");
+    let xx = (now.offset().left) + (now.width() / 2);
+    let yy = (now.offset().top) + (now.height() / 2);
+    let radd = Math.atan2(event.pageX - xx, event.pageY - yy);
+    let rott = (radd * (180 / Math.PI) * -1) + 180;
+    if ($('.wow').is(":hover")) {
+      now.css({
+        '-webkit-transform': 'rotate(' + rott + 'deg)',
+        '-moz-transform': 'rotate(' + rott + 'deg)',
+        '-ms-transform': 'rotate(' + rott + 'deg)',
+        'transform': 'rotate(' + rott + 'deg)'
+      });
+    }
+  });
+
 
   $(document).mousemove(function(e) {
     let body_size_x = $( window ).width();
@@ -287,6 +370,10 @@ $(document).mousemove(function (event) {
      }
 
   });
+
+
+
+
 
   // $(document).mousemove(function(e) {
   //   let d_size_x = $(".draggable").width();
@@ -408,16 +495,23 @@ $(document).mousemove(function (event) {
     <p>кузница<br>бога</p>
   </div>
 </div>
-
 <div class="wow">
   <div class="cubo">
-    <div class="square cu">
-      <p>зона игр</p>
-    </div>
   </div>
-  <div class="cubes">
-  </div>
+  <!-- WOW -->
+      <div class="cubeo"></div>
+      <div class="sq cucu">
+        <div class="cubet"></div>
+        <div class="oval cu">
+          <p>зона игр</p>
+        </div>
+      </div>
 </div>
+
+
+
+
+
 
 
 <div class="kolizo">
@@ -588,6 +682,15 @@ $(document).mousemove(function (event) {
 <div id="line"></div>
 <div id="line2"></div>
 <div class="km"></div>
+
+<div class="lightning">
+  <div class="area">
+    <div class="lig"></div>
+    <h4>Слава Вулкану!</h4>
+    <div class="lig"></div>
+
+  </div>
+</div>
 
   </body>
 </html>

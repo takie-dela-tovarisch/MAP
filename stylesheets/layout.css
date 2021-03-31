@@ -46,10 +46,19 @@
 .vulkan {
   position: relative;
   background: url("../images/vulkan.svg");
-  background-size: contain;
-  width: 7.14vw;
-  height: 5.36vw;
+  background-size: cover;
+  width: 7.136vw;
+  height: 6.95vw;
   background-repeat: no-repeat;
+  /* background-color: blue; */
+}
+.vulactive {
+  animation: vulkan 2s steps(18) infinite;
+
+}
+@keyframes vulkan {
+  from { background-position: 0 0; }
+    to { background-position: 100% 0; }
 }
 .vo {
   position: absolute;
@@ -332,8 +341,7 @@ margin-right: 1.7vw;
   top: 2.5vw;
 }
 .cu {
-  bottom: 2vh;
-  right: 4vw;
+  width: 4.91vw;
 }
 .kol {
 }
@@ -536,20 +544,37 @@ overflow: hidden;
 .celcium {
   position: relative;
   background: url("../images/celcium.svg");
-  background-size: contain;
+  background-size: cover;
   width: 0.95vw;
   height: 6.96vw;
   background-repeat: no-repeat;
   margin-left: 3vw;
 }
+.anicelc {
+  animation: celcium 1.5s steps(23) infinite;
+  
+}
+@keyframes celcium {
+  from { background-position: 0 0; }
+    to { background-position: 100% 0; }
+}
 .houses {
   position: relative;
   background: url("../images/houses.svg");
-  background-size: contain;
-  width: 10.87vw;
-  height: 4.81vw;
+  background-size: cover;
+  width: 10.89vw;
+  height: 9.76vw;
   background-repeat: no-repeat;
+  background-position: 0 0%;
+  overflow: hidden;
+}
+.anihouse {
+  animation: houses 2.5s steps(18) infinite;
 
+}
+@keyframes houses {
+  from { background-position: 0 0; }
+    to { background-position: 100% 0; }
 }
 .pant {
   position: relative;
@@ -583,14 +608,95 @@ overflow: hidden;
 .kuzn {
   position: relative;
   background: url("../images/kuzn.svg");
-  background-size: contain;
-  width: 6.13vw;
+  background-size: cover;
+  width: 6.096vw;
   height: 5.42vw;
   background-repeat: no-repeat;
 }
+.anikuzn {
+  animation: kuzn 1s steps(12) infinite;
+
+}
+@keyframes kuzn {
+  from { background-position: 0 0; }
+    to { background-position: 100% 0; }
+}
+.lightning {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background: black;
+  display: none;
+}
+
+.area {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 38vh;
+  left: calc(50vw - 37.53vw);
+  animation: blur .75s ease-out infinite;
+ text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
+@keyframes blur {
+  from {
+    text-shadow:0px 0px 10px #fff,
+      0px 0px 10px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #7B96B8,
+      0px 0px 150px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px -10px 100px #7B96B8,
+      0px -10px 100px #7B96B8;
+  }
+}
+.lightning h4 {
+  color: white;
+  text-align: center;
+  font-size: 9vw;
+font-family: Garamond;
+margin-left: 2vw;
+margin-right: 2vw;
+}
+.lig {
+  position: relative;
+  background: url("../images/lig.png") no-repeat;
+  width: 7.5vw;
+  height: 10.16vw;
+  background-size: contain;
+  padding-bottom: 1vw;
+  animation: lig 0.5s infinite;;
+}
+@keyframes lig {
+0% {opacity: 0;}
+25% {
+  opacity: 1;
+}
+50% {
+  opacity: 0;
+}
+75% {
+  opacity: 1;
+}
+100% {
+  opacity: 0;
+}
+}
 .cubo {
   position: absolute;
-  background-image: url(../images/cubo.svg);
+  background-image: url("../images/cubo.svg");
   background-repeat: no-repeat;
   background-size: contain;
   width: 11.69vw;
@@ -670,16 +776,35 @@ overflow: hidden;
 }
 
 .cubes {
-  position: absolute;
-  background: url("../images/cubes.svg");
-  background-size: contain;
+  position: relative;
   width: 6.31vw;
   height: 5.65vw;
+
+}
+.cubeo {
+  position: absolute;
+  background: url("../images/cubeo.svg");
+  background-size: contain;
+  width: 2.98vw;
+  height: 2.98vw;
   background-repeat: no-repeat;
-  /* right: 25.4vw;
-  bottom: 10.7vh; */
-  right: 67vw;
-  top: 80vh;
+  left: 68.2vw;
+  top: 84.5vh;
+  transform: rotate(0deg);
+}
+.cubet {
+  position: relative;
+  background: url("../images/cubet.svg");
+  background-size: contain;
+  width: 3.76vw;
+  height: 3.58vw;
+  background-repeat: no-repeat;
+  margin-left: 3vw;
+  margin-bottom: 5vh;
+}
+.cucu {
+  left: 68vw;
+top: 80vh;
 }
 .koliz {
   position: relative;
