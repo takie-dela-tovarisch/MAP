@@ -229,8 +229,12 @@ top: 41.5vh;
 }
 @media only screen and (max-height: 768px) and (max-width: 1024px) {
 .wrapper {
-  width: 960px;
-  height: 1136px;
+  /* width: 960px;
+  height: 1136px; */
+}
+body {
+  width: 1440px;
+  height: 900px;
 }
 .name h1 {
   font-size: 6.3vw;
