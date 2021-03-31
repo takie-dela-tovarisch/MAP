@@ -228,9 +228,33 @@ top: 41.5vh;
 }
 }
 @media only screen and (max-height: 768px) and (max-width: 1024px) {
-.wrapper {
+/* .wrapper {
   width: 300%;
   height: 200%;
+} */
+.name h1 {
+  font-size: 6.3vw;
+  margin-top: 7px;
+}
+.name p {
+  margin: 0 auto;
+margin-left: 2px;
+font-family: Pragmatica;
+font-size: 7px;
+line-height: 7px;
+width: 81px;
+}
+.suka {
+  position: fixed;
+  width: 90vw;
+  height: 5vw;
+  background-color: blue;
+}
+.bog, .girl, .gregre {
+  transform: scale(2);
+}
+.sidepannel {
+  /* position: fixed; */
 }
 }
 @media only screen and (min-height: 952px) and (max-height: 1080px) {
