@@ -273,12 +273,34 @@ body {
 left: 122vw;
 top: 59.2vh;
       }
+.gregre {
+left: 30.8vw;
+top: 51vh;
+}
+.leafone {
+  top: 0.9vh;
+}
+.leaftwo {
+  top: 0.1vh;
+}
 .cow {
       width: 27.86vw;
     height: 33.39vw;
     }
-.bog, .girl, .gregre {
+.bog, .girl, .gregre, .pant, .white, .moveit, .draggableble {
   transform: scale(6);
+}
+.moveit {
+  top: 92vh;
+    left: 64.5vw;
+}
+.draggableble {
+  top: 100vh;
+    left: 79.5vw;
+}
+.papa {
+    left: 220vw;
+    top: 68vh;
 }
 .vuvu {
   left: 200.3vw;
