@@ -228,9 +228,9 @@ top: 41.5vh;
 }
 }
 @media only screen and (max-height: 768px) and (max-width: 1024px) {
-body, html {
-  width: 300vw;
-  height: 200vh;
+.wrapper {
+  width: 300%;
+  height: 200%;
 }
 }
 @media only screen and (min-height: 952px) and (max-height: 1080px) {
