@@ -237,25 +237,33 @@ body {
   height: 900px;
 }
 .name h1 {
-  font-size: 6.3vw;
+  font-size: 16.3vw;
   margin-top: 7px;
 }
 .name p {
-  margin: 0 auto;
-margin-left: 2px;
-font-family: Pragmatica;
-font-size: 7px;
-line-height: 7px;
-width: 81px;
+  margin-left: 8px;
+      font-family: Pragmatica;
+      font-size: 16px;
+      line-height: 19px;
+      width: 173px;
+}
+.name {
+  left: 6.5vw;
 }
 .suka {
   position: fixed;
   width: 90vw;
   height: 5vw;
   background-color: blue;
+  top: 0px;
+  left: 0px;
 }
-.bog, .girl, .gregre {
-  transform: scale(2);
+.bog, .girl, .gregre, .vulkan {
+  transform: scale(6);
+}
+.vuvu {
+  left: 215.3vw;
+    top: 20.1vw;
 }
 .sidepannel {
   /* position: fixed; */
