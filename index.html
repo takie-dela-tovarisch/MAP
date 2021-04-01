@@ -250,6 +250,13 @@ setTimeout(function(){
   });
 
 
+  $(".time").click ( function (){
+  if ($(window).width() < 768) {
+    $(document.body).css('background-color', 'red');
+  }
+  });
+
+
   $(".koko, .fire, .bog, .girl, .papa, .white, .vuvu, .gregre, .moveit, .draggableble, .hoho, .cece, .wow, .kuku").mouseover(function() {
     $(".cursor").addClass("active");
   });
@@ -486,11 +493,15 @@ $(document).mousemove(function (event) {
         alert('Дорогой друг! Ты масштабировал окно браузера слишком увлеченно и сломал сайт. Исправься.');
      }
    });
-   $(window).resize(function() {
-    if ($(window).height() < 768 && $(window).width() < 1024) {
 
-    }
-  });
+
+    // if ($(window).height() < 768 && $(window).width() < 1024) {
+    //
+    //     $(".vulkan").css("background-color", "red");
+    //
+    // }
+
+
 
     </script>
   </head>
@@ -501,10 +512,7 @@ $(document).mousemove(function (event) {
       <div class="ornament"></div>
     </div>
 
-<div class="sidepannel">
-      <div class="time sun"></div>
-      <p class="degree">36&deg;</p>
-</div>
+
 
 <div class="name">
   <h1>Vulcanalia</h1>
@@ -727,6 +735,10 @@ $(document).mousemove(function (event) {
   </div>
 </div>
 
+<div class="sidepannel">
+      <div class="time sun"></div>
+      <p class="degree">36&deg;</p>
+</div>
 
 
 
@@ -751,6 +763,7 @@ $(document).mousemove(function (event) {
 <div id="line2"></div>
 <div class="km"></div>
 
+
 <div class="lightning">
   <div class="area">
     <div class="lig"></div>
@@ -759,6 +772,7 @@ $(document).mousemove(function (event) {
 
   </div>
 </div>
+
 
   </body>
 </html>

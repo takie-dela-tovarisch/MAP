@@ -229,7 +229,7 @@ top: 41.5vh;
 }
 @media only screen and (max-height: 768px) and (max-width: 1024px) {
 .wrapper {
-  width: 960px;
+  width: 1600px;
   height: 1136px;
 }
 body, html {
@@ -251,8 +251,8 @@ body, html {
     top: 70.9vh;
 }
 .gigi {
-  bottom: 41.2vh;
-      right: 92.7vw;
+  bottom: -55.8vh;
+      right: -303.7vw;
 }
 .girl {
   width: 3.5vw;
@@ -271,9 +271,15 @@ body, html {
 }
 .a {
   width: 17vw;
-    height: 23.5vw;
-    left: 30.2%;
-    top: 12.5%;
+      height: 23.5vw;
+      left: 40.2%;
+          top: 74.5%;
+}
+.f1o {
+  width: 38.66vw;
+      height: 33.38vw;
+      left: 29.54vw;
+      top: 81.15vh;
 }
 .cows {
   width: 71vw;
@@ -288,8 +294,8 @@ left: 122vw;
 top: 59.2vh;
       }
 .gregre {
-  top: 93vh;
-      left: 72.8vw;
+  top: 32vh;
+  left: 16.8vw;
 }
 .ce {
     width: 37.73vw;
@@ -325,22 +331,22 @@ height: 39.02vw;
   left: -18vw;
 }
 .stst {
-    bottom: 13.6vh;
-    left: 155.7vw;
+  bottom: -82.4vh;
+      left: 170.7vw;
 }
 .kuku {
-    right: 60.6vw;
-    top: 50.5vh;
+  right: -330.6vw;
+top: 55.5vh;
 }
 .cubeo {
   width: 18.98vw;
-    height: 18.98vw;
-    left: 301vw;
-    top: 141.5vh;
+      height: 18.98vw;
+      left: 330vw;
+      top: 164.5vh;
 }
 .cucu {
-    left: 309vw;
-    top: 138vh;
+  left: 340vw;
+      top: 161vh;
 }
 .cubet {
   width: 23.76vw;
@@ -352,8 +358,8 @@ height: 39.02vw;
     height: 25.42vw;
 }
 .didi {
-  right: 116.6vw;
-top: 55.3vh;
+  right: -385.6vw;
+      top: 86.3vh;
 }
 
   .pa {
@@ -375,12 +381,12 @@ top: 55.3vh;
     height: 49.76vw;
 }
 .hoho {
-    left: 5.6vw;
-    bottom: 17.2vh;
+  left: 71.6vw;
+      bottom: -35.8vh;
 }
 .cece {
     top: 16vh;
-    right: 88vw;
+    right: -300vw;
 }
 .gigigi {
   width: 30.53vw;
@@ -389,25 +395,27 @@ top: 55.3vh;
   margin-top: 13.14vh;
 }
 .moveit {
-  top: 59vh;
+  top: 165vh;
     left: 16.5vw;
 }
 .draggableble {
-  top: 67vh;
+  top: 173vh;
     left: 32.5vw;
 }
 .papa {
-    left: 220vw;
-    top: 68vh;
+  left: 246vw;
+  top: 88vh;
 }
 .vuvu {
-  left: 200.3vw;
+  left: 225.3vw;
     top: 0.1vw;
 }
 .sidepannel {
   position: fixed;
-  left: -17px;
-    top: 139px;
+  right: 17px;
+    bottom: 17px;
+    top: auto;
+    height: 118px;
 }
 .oval.sto p {
   margin-top: 13.14vh;
@@ -417,26 +425,26 @@ top: 55.3vh;
     margin-right: 0vw;
 }
 .koko {
-    bottom: 60.7vh;
-    right: 151.2vw;
+  bottom: -36.3vh;
+      right: -238vw;
 }
 .e {
   width: 17.11vw;
     height: 22.97vw;
-    right: 45.3%;
-    top: 78%;
+    right: 61.3%;
+        top: 103%;
 }
 .f {
-    left: 36.5%;
-    top: 60.6%;
+  left: 255.5%;
+      top: 160.6%;
     width: 15.11vw;
     height: 20.97vw;
 }
 .b {
-    left: 4.7%;
-    top: 53.5%;
-    width: 15.49vw;
-    height: 20.50vw;
+  left: 183.7%;
+      top: 117.5%;
+      width: 15.49vw;
+      height: 20.50vw;
 }
 .d {
   display: none;
@@ -465,7 +473,7 @@ margin-right: 4.83vw;
 margin-right: 10.1vw;
 }
 .cloth {
-    top: 78.5vh;
+    top: 185.5vh;
     left: 10vw;
 }
 .bo {
