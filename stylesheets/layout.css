@@ -1492,6 +1492,152 @@ color: #FFFFFF;
   overflow: hidden;
   /* background-color: blue; */
 }
+.pantimg {
+  position: relative;
+  background: url("../images/pantimg.svg");
+  background-size: contain;
+  width: 19.44vw;
+      height: 16.43vw;
+  background-repeat: no-repeat;
+  margin-left: 4.54vw;
+  margin-right: 13.57vw;
+  margin-top: 4.95vh;
+  margin-bottom: 4.95vh;
+  overflow: hidden;
+  /* background-color: blue; */
+}
+.bogimg {
+  position: relative;
+  background: url("../images/bogimg.svg");
+  background-size: contain;
+  width: 11.63vw;
+height: 21.92vw;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4.95vh;
+  margin-bottom: 4.95vh;
+  overflow: hidden;
+  /* background-color: blue; */
+}
+.greenimg {
+  position: relative;
+  background: url("../images/greenimg.svg");
+  background-size: contain;
+  width: 12.63vw;
+    height: 16.92vw;
+  background-repeat: no-repeat;
+  margin-left: 7.54vw;
+  margin-right: auto;
+  margin-top: 4.95vh;
+  margin-bottom: 4.95vh;
+  overflow: hidden;
+  /* background-color: blue; */
+}
+.clothimg {
+  position: relative;
+  background: url("../images/clothimg.svg");
+  background-size: contain;
+  width: 19.44vw;
+      height: 15.43vw;
+  background-repeat: no-repeat;
+  margin-left: 4.54vw;
+  margin-right: 13.57vw;
+  margin-top: 4.95vh;
+  margin-bottom: 4.95vh;
+  overflow: hidden;
+}
+.stickimg {
+  position: relative;
+  background: url("../images/stickimg.svg");
+  background-size: contain;
+  width: 19.44vw;
+      height: 15.43vw;
+  background-repeat: no-repeat;
+  margin-left: 4.54vw;
+  margin-right: 13.57vw;
+  margin-top: 4.95vh;
+  margin-bottom: 4.95vh;
+  overflow: hidden;
+}
+.housesimg {
+  position: relative;
+  background: url("../images/housesimg.svg");
+  background-size: contain;
+  width: 20.44vw;
+  height: 18.43vw;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4.95vh;
+  margin-bottom: 4.95vh;
+  overflow: hidden;
+}
+.cubeimg {
+  position: relative;
+  background: url("../images/cubeimg.svg");
+  background-size: contain;
+  width: 20.44vw;
+  height: 18.43vw;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4.95vh;
+  margin-bottom: 4.95vh;
+  overflow: hidden;
+}
+.colizimg {
+  position: relative;
+  background: url("../images/colizimg.svg");
+  background-size: contain;
+  width: 20.44vw;
+  height: 15.43vw;
+  background-repeat: no-repeat;
+  margin-left: 6vw;
+  margin-right: auto;
+  margin-top: 4.95vh;
+  margin-bottom: 4.95vh;
+  overflow: hidden;
+}
+.celciumimg {
+  position: relative;
+  background: url("../images/celciumimg.svg");
+  background-size: contain;
+  width: 11.44vw;
+  height: 15.43vw;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4.95vh;
+  margin-bottom: 4.95vh;
+  overflow: hidden;
+}
+.cuznimg {
+  position: relative;
+  background: url("../images/kuznimg.svg");
+  background-size: contain;
+  width: 17.44vw;
+height: 15.43vw;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4.95vh;
+  margin-bottom: 4.95vh;
+  overflow: hidden;
+}
+.discoimg {
+  position: relative;
+  background: url("../images/discoimg.svg");
+  background-size: contain;
+  width: 24.44vw;
+height: 15.43vw;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4.95vh;
+  margin-bottom: 4.95vh;
+  overflow: hidden;
+}
 del {
 	text-decoration: line-through;
 	text-decoration-color: white;
