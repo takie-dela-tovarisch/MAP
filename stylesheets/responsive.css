@@ -232,9 +232,9 @@ top: 41.5vh;
   /* width: 960px;
   height: 1136px; */
 }
-body {
+body, html {
   width: 1440px;
-  height: 900px;
+  height: 970px;
 }
 .name h1 {
   font-size: 16.3vw;
@@ -251,8 +251,18 @@ body {
   right: 221vw;
     top: 70.9vh;
 }
+.gigi {
+  bottom: 48.2vh;
+right: 82.7vw;
+}
+.girl {
+  width: 3.5vw;
+}
 .name {
   left: 6.5vw;
+}
+.c {
+  display: none;
 }
 .vulkan {
   background-position: 0% 0%;
@@ -278,8 +288,8 @@ left: 122vw;
 top: 59.2vh;
       }
 .gregre {
-left: 30.8vw;
-top: 51vh;
+  top: 85vh;
+      left: 72.8vw;
 }
 .leafone {
   top: 0.9vh;
@@ -291,16 +301,70 @@ top: 51vh;
       width: 27.86vw;
     height: 33.39vw;
     }
-.bog, .girl, .gregre, .pant, .white, .moveit, .draggableble {
+.bog, .girl, .gregre, .pant, .white, .moveit, .draggableble, .celcium {
   transform: scale(6);
 }
+.stickright, .stickleft {
+  width: 31.90vw;
+height: 39.02vw;
+}
+.stickleft {
+  bottom: -20vh;
+}
+.stst {
+    bottom: 31.6vh;
+    left: 135.7vw;
+
+}
+.kuku {
+    right: 60.6vw;
+    top: 50.5vh;
+}
+.cubeo {
+  width: 18.98vw;
+    height: 18.98vw;
+    left: 301vw;
+    top: 141.5vh;
+}
+.cucu {
+    left: 321vw;
+    top: 138vh;
+}
+.cubet {
+  width: 23.76vw;
+    height: 23.58vw;
+}
+.kuzn {
+  width: 29.096vw;
+    height: 25.42vw;
+}
+.didi {
+  right: 116.6vw;
+top: 62.3vh;
+}
+.disco {
+  width: 40.29vw;
+    height: 26.19vw;
+}
+.houses {
+  width: 55.74vw;
+    height: 49.76vw;
+}
+.hoho {
+    left: 5.6vw;
+    bottom: 17.2vh;
+}
+.cece {
+    top: 16vh;
+    right: 102vw;
+}
 .moveit {
-  top: 92vh;
-    left: 64.5vw;
+  top: 59vh;
+    left: 16.5vw;
 }
 .draggableble {
-  top: 100vh;
-    left: 79.5vw;
+  top: 67vh;
+    left: 32.5vw;
 }
 .papa {
     left: 220vw;
