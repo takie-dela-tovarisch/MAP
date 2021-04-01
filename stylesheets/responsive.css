@@ -229,12 +229,11 @@ top: 41.5vh;
 }
 @media only screen and (max-height: 768px) and (max-width: 1024px) {
 .wrapper {
-  /* width: 960px;
-  height: 1136px; */
+  width: 960px;
+  height: 1136px;
 }
 body, html {
-  width: 1440px;
-  height: 970px;
+
 }
 .name h1 {
   font-size: 16.3vw;
@@ -252,11 +251,12 @@ body, html {
     top: 70.9vh;
 }
 .gigi {
-  bottom: 48.2vh;
-right: 82.7vw;
+  bottom: 41.2vh;
+      right: 92.7vw;
 }
 .girl {
   width: 3.5vw;
+  margin-left: 15vw;
 }
 .name {
   left: 6.5vw;
@@ -288,8 +288,17 @@ left: 122vw;
 top: 59.2vh;
       }
 .gregre {
-  top: 85vh;
+  top: 93vh;
       left: 72.8vw;
+}
+.ce {
+    width: 37.73vw;
+}
+.celcium {
+  margin-left: 18vw;
+}
+.oval.ce p {
+  margin-top: 12.14vh;
 }
 .leafone {
   top: 0.9vh;
@@ -310,11 +319,14 @@ height: 39.02vw;
 }
 .stickleft {
   bottom: -20vh;
+  left: -16vw;
+}
+.stickright {
+  left: -18vw;
 }
 .stst {
-    bottom: 31.6vh;
-    left: 135.7vw;
-
+    bottom: 13.6vh;
+    left: 155.7vw;
 }
 .kuku {
     right: 60.6vw;
@@ -327,12 +339,13 @@ height: 39.02vw;
     top: 141.5vh;
 }
 .cucu {
-    left: 321vw;
+    left: 309vw;
     top: 138vh;
 }
 .cubet {
   width: 23.76vw;
     height: 23.58vw;
+    margin-left: 13vw;
 }
 .kuzn {
   width: 29.096vw;
@@ -340,7 +353,18 @@ height: 39.02vw;
 }
 .didi {
   right: 116.6vw;
-top: 62.3vh;
+top: 55.3vh;
+}
+
+  .pa {
+      margin-left: -11vw;
+      margin-right: -11vw;
+  }
+  .cu {
+      width: 30.91vw;
+  }
+.oval.pa p {
+  margin-top: 11.14vh;
 }
 .disco {
   width: 40.29vw;
@@ -356,7 +380,13 @@ top: 62.3vh;
 }
 .cece {
     top: 16vh;
-    right: 102vw;
+    right: 88vw;
+}
+.gigigi {
+  width: 30.53vw;
+}
+.oval.gigigi p {
+  margin-top: 13.14vh;
 }
 .moveit {
   top: 59vh;
@@ -375,8 +405,16 @@ top: 62.3vh;
     top: 0.1vw;
 }
 .sidepannel {
+  position: fixed;
   left: -17px;
     top: 139px;
+}
+.oval.sto p {
+  margin-top: 13.14vh;
+}
+.sto {
+    margin-left: -23vw;
+    margin-right: 0vw;
 }
 .koko {
     bottom: 60.7vh;
@@ -402,6 +440,85 @@ top: 62.3vh;
 }
 .d {
   display: none;
+}
+.oval p {
+    font-size: 16px;
+    text-align: center;
+    font-family: Pragmatica;
+    line-height: 4.77vw;
+    margin-top: 2.14vh;
+    padding-bottom: 2.4vw;
+    padding-top: 2.38vw;
+}
+.square p {
+    font-size: 16px;
+    text-align: center;
+    font-family: Pragmatica;
+    line-height: 13px;
+    margin-top: 3.38vw;
+    margin-bottom: 3.4vw;
+    margin-left: 3.83vw;
+margin-right: 4.83vw;
+}
+.ho {
+  margin-left: 9.9vw;
+margin-right: 10.1vw;
+}
+.cloth {
+    top: 78.5vh;
+    left: 10vw;
+}
+.bo {
+    width: 32.53vw;
+}
+.oval.bo p {
+      margin-top: 13.14vh;
+}
+.bog {
+  margin-left: 11vw;
+}
+.info.venus {
+  position: fixed;
+  width: 320px;
+  height: 568px;
+  left: -320px;
+  opacity: 0;
+}
+.venusimg {
+  width: 39.09vw;
+      height: 35.33vh;
+      margin-left: 32.54vw;
+}
+.info h1 {
+      font-size: 9.27vw;
+}
+.cross {
+  width: 6.08vw;
+    height: 6.08vw;
+}
+.crossarea {
+  width: 8vw;
+    height: 8vw;
+}
+.info h2 {
+  margin-top: 8.45vw;
+  margin-left: 5.85vw;
+}
+.info p {
+    font-family: Pragmatica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 4.01vw;
+    line-height: 4.32vw;
+    margin-left: 7.85vw;
+    margin-right: 5.17vw;
+
+    color: #FFFFFF;
+}
+.upperinfo {
+  margin-top: 8.32vw;
+  margin-left: 5.85vw;
+    margin-right: 6.02vw;
 }
 .koliz {
   width: 37.20vw;

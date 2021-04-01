@@ -9,7 +9,7 @@ body, html {
   display: block;
   position: relative;
   cursor: none;
-  overflow: hidden;
+  overflow: auto;
 }
 body::before {
   content: "";
