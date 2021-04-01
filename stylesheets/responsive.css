@@ -109,6 +109,7 @@
       top: 39.5vh;
   }
 }
+
 @media only screen and (min-height: 847px) and (max-height: 951px) {
 .vo {
   width: 12.6vw;
@@ -116,6 +117,7 @@
     left: 44.03vw;
     top: 4.3vh;
 }
+
 .co {
   width: 4.81vw;
     height: 5.42vw;
@@ -721,5 +723,9 @@ top: 41.5vh;
 }
 .oval.sto p {
   margin-top: 4.14vh;
+}
+.cloth {
+  top: 68.5vh;
+left: 16vw;
 }
 }

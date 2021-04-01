@@ -264,7 +264,7 @@ div {
   transition: opacity 0.5s ease;
 }
 .cloth {
-  top: 65.5vh;
+  top: 66.5vh;
 left: 16vw;
 }
 .momo {
@@ -1030,6 +1030,13 @@ margin-right: 2vw;
   left: 24vw;
   top: 38.7vh;
 }
+.bogonight {
+  background-image: url(../images/bogonight.svg);
+}
+.boonight {
+  background-image: url(../images/boonight.svg);
+
+}
 .boo {
   position: absolute;
   background-image: url("../images/boo.svg");
@@ -1406,6 +1413,10 @@ left: -33.33vw;
 transition: 1s ease;
 opacity: 0;
 }
+.infonight {
+background: #EFEFEF;
+color: black;
+}
 .upperinfo {
   position: relative;
   margin-left: 1.85vw;
@@ -1434,6 +1445,10 @@ margin-top: 0.45vw;
   right: 0;
   bottom: 1.3vw;
   /* background-color: blue; */
+}
+.crossnight {
+  background: url("../images/crossnight.svg");
+
 }
 .crossarea {
   position: absolute;
@@ -1496,11 +1511,11 @@ color: #FFFFFF;
   position: relative;
   background: url("../images/pantimg.svg");
   background-size: contain;
-  width: 19.44vw;
-      height: 16.43vw;
-  background-repeat: no-repeat;
-  margin-left: 4.54vw;
-  margin-right: 13.57vw;
+  width: 20vw;
+    height: 14vw;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
   margin-top: 4.95vh;
   margin-bottom: 4.95vh;
   overflow: hidden;
@@ -1510,8 +1525,8 @@ color: #FFFFFF;
   position: relative;
   background: url("../images/bogimg.svg");
   background-size: contain;
-  width: 11.63vw;
-height: 21.92vw;
+  width: 10.63vw;
+height: 20.92vw;
   background-repeat: no-repeat;
   margin-left: auto;
   margin-right: auto;
@@ -1624,6 +1639,9 @@ height: 15.43vw;
   margin-top: 4.95vh;
   margin-bottom: 4.95vh;
   overflow: hidden;
+}
+.cuznimgnight {
+  background: url("../images/kuznimgnight.svg");
 }
 .discoimg {
   position: relative;
