@@ -87,6 +87,10 @@ div {
   background-repeat: no-repeat;
   /* background-color: blue; */
 }
+.vulkannight {
+  background: url("../images/vulkannight.svg");
+  background-size: cover;
+}
 .vulactive {
   animation: vulkan 2s steps(18) infinite;
 
@@ -660,6 +664,12 @@ transition: transform 0.5s;
   background-repeat: no-repeat;
   margin-left: 1vw;
 }
+.boglove {
+  background: url("../images/boglove.svg");
+  background-size: cover;
+  animation: bog 1.5s steps(11) infinite alternate;
+  transition: 0.5s ease;
+}
 .boganim {
   animation: bog 1.5s steps(11) infinite alternate;
 
@@ -1204,12 +1214,23 @@ top: 80vh;
   background-color: blue;
 }
 .ornament {
-  background-image: url("../images/testtest.png");
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   z-index: 1;
+}
+.testtest {
+  background-image: url("../images/testtest.png");
+}
+.eight {
+  background-image: url("../images/846.png");
+}
+.eightnight {
+  background-image: url("../images/eightnight.png");
+}
+.testtestwhite {
+  background-image: url("../images/testtestwhite.png");
 }
 .mb {
   position: absolute;
@@ -1258,36 +1279,42 @@ width: 52px;
 height: 52px;
 
 }
-/* .sun {
-  background-image: url("images/sun.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  transition: .5s;
-
-} */
 .sun {
   width: 52px;
   height: 52px;
   overflow: hidden;
   background: url("../images/sun.svg") no-repeat 0 0%;
   background-size: cover;
-  animation: sun 0.6s steps(6);
-  animation-play-state: paused;
+  animation: moon 0.6s steps(6);
+  animation-play-state: running;
   animation-fill-mode: forwards;
   transition: 0.5s opacity;
 }
 .sun:hover {
   opacity: 0.5;
 }
+@keyframes moon {
+    from { background-position: 100% 0; }
+      to { background-position: 0% 0; }
+}
 
 @keyframes sun {
     from { background-position: 0 0; }
       to { background-position: 100% 0; }
 }
+
 .moon {
   background-image: url("../images/moon.svg");
-  background-size: contain;
+  background-position: 100% 0%;
+  background-size: cover;
   background-repeat: no-repeat;
+  animation: sun 0.6s steps(6);
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+  transition: 0.5s opacity;
+}
+.moon:hover {
+  opacity: 0.5;
 }
 .eye {
   position: absolute;

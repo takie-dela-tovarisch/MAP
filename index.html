@@ -22,26 +22,41 @@
     <script type="text/javascript">
 
     $(document).ready(function(){
-      $(".time").click(function(){
-        $(this).css("animation-play-state", "running");
-        setTimeout(function(){
-        $(".time").toggleClass('moon');
-      }, 1000);
-
-      setTimeout(function(){
-        if ($(".time").hasClass("sun")) {
-        $(".pant").addClass("pantnight");
-        $(".papa").css('top', '38vh');
-        $(document.body).css('background-color', 'black');
-        $(".white").addClass("whitenight");
-        $(".pupil").addClass("pupilnight");
 
 
+      // $(".time.sun").click(function(){
+      //   // $(".sun").css("animation-play-state", "running");
+      //   setTimeout(function(){
+      //     $(".time").removeClass("sun");
+      //   $(".time").addClass("moon");
+      // }, 600);
+      //
+      //
+      // setTimeout(function(){
+      //   if ($(".time").hasClass("moon")) {
+      //   $(".pant").addClass("pantnight");
+      //   $(".papa").css('top', '38vh');
+      //   $(document.body).css('background-color', 'black');
+      //   $(".white").addClass("whitenight");
+      //   $(".pupil").addClass("pupilnight");
+      //   $(".vulkan").addClass("vulkannight");
+      //   $(".vulkan").addClass("vulkannight");
+      //   $(".name").css('color', 'white');
+      //
+      //   $(".ornament.testtest").addClass("testtestwhite");
+      //   $(".ornament.eight").addClass("eightnight");
+      //   setTimeout(function(){
+      //     $(".ornament").removeClass("testtest");
+      //     $(".ornament").removeClass("eight");
+      // }, 100);
+      // }
+      // }, 1200);
+      // });
 
 
-      }
-      }, 1200);
-      });
+
+
+
 
 
 
@@ -89,7 +104,6 @@ $(".fire").click(function(){
   }, 1200);
 });
 
-
 $(".cow").hover(function(){
   $(this).addClass("kill");
 
@@ -106,6 +120,54 @@ $(".gigi").click(function(){
 $(".info.venus").css("left", "0");
 $(".info.venus").css("opacity", "1");
 });
+
+$(".time").click(function(){
+$(".time").toggleClass("moon");
+$(".time").toggleClass("sun");
+
+setTimeout(function(){
+  if ($(".time").hasClass("moon")) {
+  $(".pant").addClass("pantnight");
+  $(".papa").css('top', '38vh');
+  $(document.body).css('background-color', 'black');
+  $(".white").addClass("whitenight");
+  $(".pupil").addClass("pupilnight");
+  $(".vulkan").addClass("vulkannight");
+  $(".vulkan").addClass("vulkannight");
+  $(".name").css('color', 'white');
+
+  $(".ornament.testtest").addClass("testtestwhite");
+  $(".ornament.eight").addClass("eightnight");
+  setTimeout(function(){
+    $(".ornament").removeClass("testtest");
+    $(".ornament").removeClass("eight");
+}, 100);
+}
+}, 1200);
+setTimeout(function(){
+  if ($(".time").hasClass("sun")) {
+  $(".pant").removeClass("pantnight");
+  $(".papa").css('top', '38vh');
+  $(document.body).css('background-color', '#8768E1');
+  $(".white").removeClass("whitenight");
+  $(".pupil").removeClass("pupilnight");
+  $(".vulkan").removeClass("vulkannight");
+  $(".vulkan").removeClass("vulkannight");
+  $(".name").css('color', 'black');
+
+  $(".ornament").addClass("testtest");
+  $(".ornament").addClass("eight");
+
+  setTimeout(function(){
+    $(".ornament.testtest").removeClass("testtestwhite");
+    $(".ornament.eight").removeClass("eightnight");
+}, 100);
+}
+}, 1300);
+});
+
+
+
 
 $(".papa, .white").click(function(){
 $(".info.mama").css("left", "0");
@@ -200,6 +262,10 @@ $(".vo, .vuvu").mouseout(function(){
 $(".veno, .gigi").mouseover(function(){
   $(".venoo").css("opacity", "1");
   $(".gigigi").css("opacity", "0.5");
+  $(".bog").addClass("boglove");
+  setTimeout(function(){
+  $(".bog").removeClass('boglove');
+  }, 3000);
 });
 $(".veno, .girl").mouseout(function(){
   $(".venoo").css("opacity", "0");
@@ -498,11 +564,10 @@ setTimeout(function(){
   });
 
 
-  $(".time").click ( function (){
-  if ($(window).width() < 768) {
-    $(document.body).css('background-color', 'red');
-  }
-  });
+
+  // if ($(window).height() < 846) {
+  //   $(document.body).css('background-color', 'red');
+  // }
 
 
   $(".sticks, .disco, .koko, .fire, .bog, .girl, .papa, .white, .vuvu, .gregre, .moveit, .draggableble, .hoho, .cece, .wow, .kuku").mouseover(function() {
@@ -736,6 +801,14 @@ $(document).mousemove(function (event) {
      if ($(window).height() < 400 && $(window).width() > 1024) {
         alert('Дорогой друг! Ты масштабировал окно браузера слишком увлеченно и сломал сайт. Исправься.');
      }
+     if ($(this).height() < 846) {
+            $('.ornament').addClass("eight");
+            $('.ornament').removeClass("testtest");
+
+        } else {
+            $('.ornament').toggleClass("testtest");
+            $('.ornament').removeClass("eight");
+        }
    });
 
 
@@ -750,11 +823,14 @@ $(document).mousemove(function (event) {
     </script>
   </head>
   <body>
-    <div class="wrapper">
-      <!-- <div class="mb">
-      </div> -->
-      <div class="ornament"></div>
-    </div>
+
+
+      <div class="wrapper">
+        <!-- <div class="mb">
+        </div> -->
+        <div class="ornament testtest"></div>
+      </div>
+
 
 
 
