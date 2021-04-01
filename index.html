@@ -107,17 +107,77 @@ $(".info.venus").css("left", "0");
 $(".info.venus").css("opacity", "1");
 });
 
+$(".papa, .white").click(function(){
+$(".info.mama").css("left", "0");
+$(".info.mama").css("opacity", "1");
+});
+
+$(".bobo").click(function(){
+$(".info.loved").css("left", "0");
+$(".info.loved").css("opacity", "1");
+});
+
+
 $(".vuvu").click(function(){
 $(".info.fest").css("left", "0");
 $(".info.fest").css("opacity", "1");
 });
 
+$(".gregre").click(function(){
+$(".info.rost").css("left", "0");
+$(".info.rost").css("opacity", "1");
+});
+
+$(".moveit, .cloth, .draggableble").click(function(){
+$(".info.naked").css("left", "0");
+$(".info.naked").css("opacity", "1");
+});
+
+$(".hoho").click(function(){
+$(".info.sleep").css("left", "0");
+$(".info.sleep").css("opacity", "1");
+});
+
+$(".stst").click(function(){
+$(".info.kids").css("left", "0");
+$(".info.kids").css("opacity", "1");
+});
+
+$(".cubeo, .cucu").click(function(){
+$(".info.games").css("left", "0");
+$(".info.games").css("opacity", "1");
+});
+
+$(".koko").click(function(){
+$(".info.kino").css("left", "0");
+$(".info.kino").css("opacity", "1");
+});
+
+$(".kuku").click(function(){
+$(".info.work").css("left", "0");
+$(".info.work").css("opacity", "1");
+});
+
+$(".didi").click(function(){
+$(".info.dance").css("left", "0");
+$(".info.dance").css("opacity", "1");
+});
+
+$(".cece").click(function(){
+$(".info.hot").css("left", "0");
+$(".info.hot").css("opacity", "1");
+});
 
 $(".crossarea").click(function(){
   $(".cursor").addClass("active");
 $(".info").css("left", "-33.33vw");
 $(".info").css("opacity", "0");
 });
+
+
+
+
+
 
 $(".crossarea").mouseover(function(){
   $(".cursor").addClass("active");
@@ -235,6 +295,10 @@ $(".diso, .didi").mouseout(function(){
 $(".co, .cece").mouseover(function(){
   $(".coo").css("opacity", "1");
   $(".ce").css("opacity", "0.5");
+  $(".bog").addClass("boganim");
+  setTimeout(function(){
+  $(".bog").removeClass('boganim');
+}, 3000);
 });
 $(".co, .cece").mouseout(function(){
   $(".coo").css("opacity", "0");
@@ -244,6 +308,10 @@ $(".co, .cece").mouseout(function(){
 $(".cubeo, .cucu").mouseover(function(){
   $(".gameoo").css("opacity", "1");
   $(".cu").css("opacity", "0.5");
+  $(".koliz").addClass("kolizanime");
+  setTimeout(function(){
+  $(".koliz").removeClass("kolizanime");
+}, 2000);
 });
 $(".cubeo, .cucu").mouseout(function(){
   $(".gameoo").css("opacity", "0");
@@ -253,35 +321,48 @@ $(".cubeo, .cucu").mouseout(function(){
 $(".stst, .sticko").mouseover(function(){
   $(".stickoo").css("opacity", "1");
   $(".sto").css("opacity", "0.5");
+  $(".houses").css("opacity", "0.2");
 });
 $(".stst, .sticko").mouseout(function(){
   $(".stickoo").css("opacity", "0");
   $(".sto").css("opacity", "1");
+  $(".houses").css("opacity", "1");
 });
 
 $(".koko, .kolizo").mouseover(function(){
   $(".kolizoo").css("opacity", "1");
   $(".kol").css("opacity", "0.5");
+  $(".kuzn").css("opacity", "0.2");
+  $(".houses").css("opacity", "0.2");
+
 });
 $(".koko, .kolizo").mouseout(function(){
   $(".kolizoo").css("opacity", "0");
   $(".kol").css("opacity", "1");
+  $(".kuzn").css("opacity", "1");
+  $(".houses").css("opacity", "1");
 });
 
 $(".homo, .hoho").mouseover(function(){
   $(".homoo").css("opacity", "1");
   $(".ho").css("opacity", "0.5");
+  $(".fire").removeClass("burning");
+  $(".fire").removeClass("start");
 });
 $(".homo, .hoho").mouseout(function(){
   $(".homoo").css("opacity", "0");
   $(".ho").css("opacity", "1");
 });
 
-$(".clotho, .draggableble, .moveit, cloth").mouseover(function(){
+$(".clotho, .draggableble, .moveit, .cloth").mouseover(function(){
   $(".clothoo").css("opacity", "1");
   $(".cloth").css("opacity", "0.5");
+  $(".celcium").addClass("anicelc");
+  setTimeout(function(){
+  $(".celcium").removeClass("anicelc");
+}, 3000);
 });
-$(".homo, .hoho").mouseout(function(){
+$(".clotho, .draggableble, .moveit, .cloth").mouseout(function(){
   $(".clothoo").css("opacity", "0");
   $(".cloth").css("opacity", "1");
 });
@@ -343,7 +424,7 @@ setTimeout(function(){
     $(".disco").css('opacity', '0.2');
     $(".sticks").css('opacity', '0.2');
     setTimeout(function(){
-    $(".disco").removeClass("pale");
+    $(".kuzn").removeClass("anikuzn");
   }, 2000);
   })
   $(".kuku").mouseout(function() {
@@ -426,9 +507,11 @@ setTimeout(function(){
 
   $(".sticks, .disco, .koko, .fire, .bog, .girl, .papa, .white, .vuvu, .gregre, .moveit, .draggableble, .hoho, .cece, .wow, .kuku").mouseover(function() {
     $(".cursor").addClass("active");
+        $(".km").css('opacity', '0');
   });
   $(".sticks, .disco, .koko, .fire, .bog, .girl, .papa, .white, .vuvu, .gregre, .moveit, .draggableble, .hoho, .cece, .wow, .kuku").mouseout(function() {
     $(".cursor").removeClass("active");
+    $(".km").css('opacity', '1');
   });
 
 
@@ -445,13 +528,7 @@ $(".lightning").css('display', 'block');
 }, 600);
 setTimeout(function(){
 $(".lightning").css('display', 'none');
-}, 800);
-setTimeout(function(){
-$(".lightning").css('display', 'block');
 }, 900);
-setTimeout(function(){
-$(".lightning").css('display', 'none');
-}, 1100);
 
 });
 
@@ -998,11 +1075,159 @@ $(document).mousemove(function (event) {
       <div class="cross"></div>
     </div>
   </div>
-<h2>Зона Венеры</h2>
+<h2>Главный вулкан</h2>
 <div class="festimg">
 </div>
- <p>«Vulcanalia» — ежегодный фестиваль, который проводился в Древнем Риме каждое 23 августа. <br> Это был праздник плодородия и любви, отдыха и работы, жизни и смерти одновеременно. Также Vulcanalia был праздником урожая. Мы, в «Boomshh» решили устроить для вас этот фестиваль, потому что его тема и обычаи, связанные с ним, тесно связаны с нашим рестораном. Давайте восхвалять еду и вулканы вместе! </p>
+ <p>«Vulcanalia» — ежегодный фестиваль, который проводился в Древнем Риме каждое 23 августа. <br><br> Это был праздник плодородия и&nbsp;любви, отдыха и&nbsp;работы, жизни и&nbsp;смерти одновеременно. <br>Также Vulcanalia был праздником урожая. Мы,&nbsp;в&nbsp;«Boomshh» решили устроить для вас этот&nbsp;фестиваль, потому что его темы и&nbsp;обычаи тесно связаны с&nbsp;нашим&nbsp;рестораном.
+<br>
+<br>
+Давайте восхвалять еду и&nbsp;вулканы вместе!</p>
 </div>
+
+<div class="info rost">
+<div class="upperinfo">
+  <h1>Информация</h1>
+  <div class="crossarea">
+    <div class="cross"></div>
+  </div>
+</div>
+<h2>Великий Росток</h2>
+<div class="festimg">
+</div>
+ <p>Благотворное влияние огня приписывалось Солнцу. Фестиваль «Vulcanalia» всегда проводился в сезон сбора урожая. Римляне восхваляли бога Вулкана, которая обеспечил их едой. В этой зоне находится Великий Росток высотой в 3 метра. Посетители вольны поливать и любоваться растением. Главное — возблагодарите великого Бога, который также позволяет поварам Boomshh вкусно кормить вас на фестивале и вне.</p>
+</div>
+
+<div class="info naked">
+<div class="upperinfo">
+  <h1>Информация</h1>
+  <div class="crossarea">
+    <div class="cross"></div>
+  </div>
+</div>
+<h2>Солнечно-тканевая зона</h2>
+<div class="festimg">
+</div>
+ <p>У древних римлян была традиция: во время каждого фестиваля  «Vulcanalia» повседневная одежда развешивалась длинными рядами на солнце. Взамен люди надевали самые праздничные из нарядов, чтобы порадовать Вулкана. Предлагаем вам сделать то же самое перед походом на ваше вечернее свидание или семейный ужин.</p>
+</div>
+
+<div class="info sleep">
+<div class="upperinfo">
+  <h1>Информация</h1>
+  <div class="crossarea">
+    <div class="cross"></div>
+  </div>
+</div>
+<h2>Спальная зона</h2>
+<div class="festimg">
+</div>
+ <p>Празднование традиционно проводилось вне города, в связи с обилием огня и шума. Наш фестиваль не исключение. Рядом с курсором можно заметить количество километров от города. Далековато правда? Не поедете ведь после плотного ужина домой? Оставайтесь в нашей комфортабельной спальной зоне (здесь есть даже кондиционеры).</p>
+</div>
+
+<div class="info kids">
+<div class="upperinfo">
+  <h1>Информация</h1>
+  <div class="crossarea">
+    <div class="cross"></div>
+  </div>
+</div>
+<h2>Детская арена</h2>
+<div class="festimg">
+</div>
+ <p>Вулкан также ассоциировался с домашним уютом, ему приносили подношения, чтобы в семье все было хорошо. На фестиваль с радостью приводили детей. Мы также не советуем ваших домочадцев дома. Помимо всего прочего веселья на фестивале находится детская арена, где дети могут наслаждаться бесчинством и беспределом.</p>
+</div>
+
+<div class="info games">
+<div class="upperinfo">
+  <h1>Информация</h1>
+  <div class="crossarea">
+    <div class="cross"></div>
+  </div>
+</div>
+<h2>Зона игр</h2>
+<div class="festimg">
+</div>
+ <p>На фестивале особое место отводилось играм — так называемым «Ludi», включавшие атлетические состязания, гонки колесниц, кулачный и звериный бои, сценическое разыгрывание сражений. У древних римлян такие игры ассоциировались с религиозным культом. Мы же предлагаем вам поиграть в настольные и компьютерные игры во славу выходных и лета!</p>
+</div>
+
+<div class="info kino">
+<div class="upperinfo">
+  <h1>Информация</h1>
+  <div class="crossarea">
+    <div class="cross"></div>
+  </div>
+</div>
+<h2>Амфитеатр</h2>
+<div class="festimg">
+</div>
+ <p>Во время праздника всегда проводились театральные постановки, конкурсы музыкантов-исполнителей. Простите, мы не пригласили актеров (тем более, что в Риме они были не в почете), зато в течение всего фестиваля в амфитеатре показывают самое разное кино.  *Если вы фанат фон Триера, приходите попозже.</p>
+</div>
+
+<div class="info work">
+<div class="upperinfo">
+  <h1>Информация</h1>
+  <div class="crossarea">
+    <div class="cross"></div>
+  </div>
+</div>
+<h2>Кузница Вулкана</h2>
+<div class="festimg">
+</div>
+ <p>Вулкан для древних греков —  бег разрушительного и очистительного   огня. Для римлян — еще и покровитель кузнечного дела. Римляне полагали, что под любой горой находится мастерская Вулкана: когда в ней кипит работа, извергается лава. Мы в Boomshh следуем традициям и готовим исключительно на подземной кухне. Приглашаем вас на экскурсию в <del>кузницу Вулкана</del> обитель наших лавовых поваров.</p>
+</div>
+
+<div class="info dance">
+<div class="upperinfo">
+  <h1>Информация</h1>
+  <div class="crossarea">
+    <div class="cross"></div>
+  </div>
+</div>
+<h2>Тусовочная зона</h2>
+<div class="festimg">
+</div>
+ <p>Вулкан был… многофункциональным богом. В сферу его забот также входила работа «небесного огня» — молний. В нашей умопомрачительной тусовочной зоне предлагаем окунуться в дикий рейв под звуки кифары. Мы клянемся, танец под нашим диско-шаром с молниями даже лучше алкоголя.</p>
+</div>
+
+<div class="info hot">
+<div class="upperinfo">
+  <h1>Информация</h1>
+  <div class="crossarea">
+    <div class="cross"></div>
+  </div>
+</div>
+<h2>Великий термометр</h2>
+<div class="festimg">
+</div>
+ <p>Фестиваль обыкновенно проводился в самый жаркий день лета. В этой части фестиваля находился Великий (четырехметровый, конечно) термометр. В правой верхней части карты можно заметить его показания термометра. Хотя кому нужны эти ваши технологии, когда температуру воздуха можно увидеть с любой точки на территории? Конечно, чем дальше от главного вулкана, тем прохладнее становится. Возьмите с собой на фестиваль побольше одежды!</p>
+</div>
+
+<div class="info mama">
+<div class="upperinfo">
+  <h1>Информация</h1>
+  <div class="crossarea">
+    <div class="cross"></div>
+  </div>
+</div>
+<h2>Главный храм</h2>
+<div class="festimg">
+</div>
+ <p>В этой части фестиваля вы можете узнать всю основную информацию и купить сувениры. С праздником связано множество традиций. Например, римляне разжигали множество высоких костров по всей территории фестиваля. Зажгите костры, пожалуйста, мы не успели. К слову, у костров всегда можно принести жертву богу Вулкану. Давайте не будем затрагивать этические вопросы, у нас здесь античный вайб. Фестиваль также проводился всю ночь и весь день, поэтому вы можете посмотреть, как все будет выглядеть ночью. Приятного времяпрепровождения! </p>
+</div>
+
+<div class="info loved">
+<div class="upperinfo">
+  <h1>Информация</h1>
+  <div class="crossarea">
+    <div class="cross"></div>
+  </div>
+</div>
+<h2>Зона Вулкана</h2>
+<div class="festimg">
+</div>
+ <p>Вулкан — античный бог разрушительного и очистительного огня. Не являясь одним из 12 главных богов Пантеона, обладает тем не менее богатой историей.  Здесь расположена статуя Вулкана. Это главное место поклонения на территории фестиваля. Для менее религиозных людей в этой части фестиваля круглосуточно раздаются прохладительные напитки.</p>
+</div>
+
+
 
 <div class="cursor normal"></div>
 <div id="line"></div>

@@ -1453,14 +1453,19 @@ color: #FFFFFF;
 }
 .festimg {
   position: relative;
-  background: url("../images/vulakn.svg");
+  background: url("../images/vulkanstatic.svg");
   background-size: contain;
-  width: 9.09vw;
-  height: 33.33vh;
+  width: 22.54vw;
+  height: 27.33vh;
   background-repeat: no-repeat;
-  margin-left: 10.54vw;
+  margin-left: 4.54vw;
   margin-right: 13.57vw;
   margin-top: 4.95vh;
   margin-bottom: 4.95vh;
-  background-color: blue;
+  overflow: hidden;
+  /* background-color: blue; */
+}
+del {
+	text-decoration: line-through;
+	text-decoration-color: white;
 }
