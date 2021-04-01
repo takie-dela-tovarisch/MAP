@@ -9,7 +9,7 @@ body, html {
   display: block;
   position: relative;
   cursor: none;
-  overflow: auto;
+  overflow: hidden;
 }
 body::before {
   content: "";
@@ -144,7 +144,7 @@ div {
   width: 7.06vw;
   height: 6.49vw;
   left: 49.54vw;
-  bottom: 10vh;
+  bottom: 12vh;
 }
 .f5o {
   position: absolute;
@@ -184,8 +184,8 @@ div {
   background-size: contain;
   width: inherit;
   height: inherit;
-  top: 1px;
-  left: 1px;
+  top: 0vw;
+  left: 0vw;
   opacity: 0;
   transition: 0.5s ease;
 }
@@ -297,7 +297,7 @@ margin-right: 1.7vw;
   font-size: 13px;
   text-align: center;
   font-family: Pragmatica;
-  line-height: 0.77vw;
+  line-height: 1.5vh;
   margin-top: 1.14vh;
   /* margin-top: 0.38vw; */
   padding-bottom: 0.40vw;
@@ -366,11 +366,192 @@ margin-right: 1.7vw;
   background-size: contain;
   width: inherit;
   height: inherit;
-  top: -4px;
-  left: -1px;
+  top: -0.1vw;
+    left: 0.1vw;
   opacity: 0;
   transition: 0.5s ease;
 }
+.kuzoo {
+  position: absolute;
+  background-image: url("../images/kuzoo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: inherit;
+  height: inherit;
+  top: 0vw;
+    left: 0vw;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.greenoo {
+  position: absolute;
+  background-image: url("../images/greenoo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: inherit;
+  height: inherit;
+  top: 0vw;
+    left: 0vw;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.discoo {
+  position: absolute;
+  background-image: url("../images/discoo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: inherit;
+  height: inherit;
+  top: 0vw;
+    left: 0vw;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.gameoo {
+  position: absolute;
+  background-image: url("../images/gameoo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: inherit;
+  height: inherit;
+  top: 0vw;
+    left: 0vw;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.stickoo {
+  position: absolute;
+  background-image: url("../images/stickoo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: inherit;
+  height: inherit;
+  top: 0vw;
+    left: 0vw;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.coo {
+  position: absolute;
+  background-image: url("../images/coo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: inherit;
+  height: inherit;
+  top: 0vw;
+    left: 0vw;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.homoo {
+  position: absolute;
+  background-image: url("../images/homoo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: inherit;
+  height: inherit;
+  top: 0vw;
+    left: 0vw;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.pantoo {
+  position: absolute;
+  background-image: url("../images/pantoo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: inherit;
+  height: inherit;
+  top: 0vw;
+    left: 0vw;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.kolizoo {
+  position: absolute;
+  background-image: url("../images/kolizoo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: inherit;
+  height: inherit;
+  top: 0vw;
+    left: 0vw;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.clothoo {
+  position: absolute;
+  background-image: url("../images/clothoo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: inherit;
+  height: inherit;
+  top: 0vw;
+    left: 0vw;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.f2oo {
+  position: absolute;
+  background-image: url("../images/f2oo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: inherit;
+  height: inherit;
+  top: 0vw;
+    left: 0vw;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.f3oo {
+  position: absolute;
+  background-image: url("../images/f3oo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: inherit;
+  height: inherit;
+  top: 0vw;
+    left: 0vw;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.f4oo {
+  position: absolute;
+  background-image: url("../images/f4oo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: inherit;
+  height: inherit;
+  top: 0vw;
+    left: 0vw;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.f5oo {
+  position: absolute;
+  background-image: url("../images/f5oo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: inherit;
+  height: inherit;
+  top: 0vw;
+    left: 0vw;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.f6oo {
+  position: absolute;
+  background-image: url("../images/f6oo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: inherit;
+  height: inherit;
+  top: 0vw;
+    left: 0vw;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
 .gi {
   right: 3.5vw;
   top: 2.5vw;
@@ -390,6 +571,7 @@ margin-right: 1.7vw;
     /* left: 14.8vw;
     bottom: 26vh; */
 }
+
 .clothes {
   position: absolute;
   background: url("../images/cloth.svg");
@@ -439,6 +621,11 @@ margin-right: 1.7vw;
   height: 6.25vw;
   background-repeat: no-repeat;
   /* margin-left: 1vw; */
+}
+.greenarea {
+  position: relative;
+  width: 4.46vw;
+  height: 6.25vw;
 }
 
 .leafone {
@@ -506,6 +693,18 @@ overflow: hidden;
   left: 27.5vw;
     top: 5vw;
 }
+.eh {
+  right: 25vw;
+      top: 34vh;
+}
+.uh {
+  left: 47.54vw;
+      bottom: 8vh;
+}
+.ah {
+  left: 33.54vw;
+      bottom: 29.15vh;
+  }
 .lol {
   top: 0vw;
     left: 3vw;
@@ -820,6 +1019,18 @@ margin-right: 2vw;
   height: 8.95vw;
   left: 24vw;
   top: 38.7vh;
+}
+.boo {
+  position: absolute;
+  background-image: url("../images/boo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: inherit;
+  height: inherit;
+  top: 1px;
+  left: 0px;
+  opacity: 0;
+  transition: 0.5s ease;
 }
 .homo {
   position: absolute;
@@ -1239,4 +1450,17 @@ color: #FFFFFF;
   margin-right: 13.57vw;
   margin-top: 4.95vh;
   margin-bottom: 4.95vh;
+}
+.festimg {
+  position: relative;
+  background: url("../images/vulakn.svg");
+  background-size: contain;
+  width: 9.09vw;
+  height: 33.33vh;
+  background-repeat: no-repeat;
+  margin-left: 10.54vw;
+  margin-right: 13.57vw;
+  margin-top: 4.95vh;
+  margin-bottom: 4.95vh;
+  background-color: blue;
 }

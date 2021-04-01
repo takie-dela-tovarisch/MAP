@@ -60,8 +60,34 @@ $(".fire").click(function(){
     }, 2000);
   }
   }, 1200);
-});
 
+  setTimeout(function(){
+    if ($(".fire.c").hasClass("burning")) {
+    $(".cows.eh").addClass("block");
+    setTimeout(function(){
+      $(".cows.eh").css("opacity", "1");
+    }, 1000);
+  }
+  }, 1200);
+
+  setTimeout(function(){
+    if ($(".fire.f").hasClass("burning")) {
+    $(".cows.ah").addClass("block");
+    setTimeout(function(){
+      $(".cows.ah").css("opacity", "1");
+    }, 1000);
+  }
+  }, 1200);
+
+  setTimeout(function(){
+    if ($(".fire.e").hasClass("burning")) {
+    $(".cows.uh").addClass("block");
+    setTimeout(function(){
+      $(".cows.uh").css("opacity", "1");
+    }, 1000);
+  }
+  }, 1200);
+});
 
 
 $(".cow").hover(function(){
@@ -76,9 +102,14 @@ $(".cow").hover(function(){
   });
 
 
-$(".girl").click(function(){
-$(".info").css("left", "0");
-$(".info").css("opacity", "1");
+$(".gigi").click(function(){
+$(".info.venus").css("left", "0");
+$(".info.venus").css("opacity", "1");
+});
+
+$(".vuvu").click(function(){
+$(".info.fest").css("left", "0");
+$(".info.fest").css("opacity", "1");
 });
 
 
@@ -106,11 +137,13 @@ $(".vo, .vuvu").mouseout(function(){
 
 });
 
-$(".veno, .girl").mouseover(function(){
+$(".veno, .gigi").mouseover(function(){
   $(".venoo").css("opacity", "1");
+  $(".gigigi").css("opacity", "0.5");
 });
 $(".veno, .girl").mouseout(function(){
   $(".venoo").css("opacity", "0");
+  $(".gigigi").css("opacity", "1");
 });
 
 $(".f1o, .fire.a").mouseover(function(){
@@ -119,6 +152,140 @@ $(".f1o, .fire.a").mouseover(function(){
 $(".f1o, .fire.a").mouseout(function(){
   $(".f1oo").css("opacity", "0");
 });
+
+$(".f2o, .fire.b").mouseover(function(){
+  $(".f2oo").css("opacity", "1");
+});
+$(".f2o, .fire.b").mouseout(function(){
+  $(".f2oo").css("opacity", "0");
+});
+
+$(".f3o, .fire.f").mouseover(function(){
+  $(".f3oo").css("opacity", "1");
+});
+$(".f3o, .fire.f").mouseout(function(){
+  $(".f3oo").css("opacity", "0");
+});
+
+$(".f4o, .fire.e").mouseover(function(){
+  $(".f4oo").css("opacity", "1");
+});
+$(".f4o, .fire.e").mouseout(function(){
+  $(".f4oo").css("opacity", "0");
+});
+
+$(".f5o, .fire.c").mouseover(function(){
+  $(".f5oo").css("opacity", "1");
+});
+$(".f5o, .fire.c").mouseout(function(){
+  $(".f5oo").css("opacity", "0");
+});
+
+$(".f6o, .fire.d").mouseover(function(){
+  $(".f6oo").css("opacity", "1");
+});
+$(".f6o, .fire.d").mouseout(function(){
+  $(".f6oo").css("opacity", "0");
+});
+
+$(".bobo").mouseover(function(){
+  $(".boo").css("opacity", "1");
+});
+$(".bobo").mouseout(function(){
+  $(".boo").css("opacity", "0");
+});
+
+$(".papa, .white").mouseover(function(){
+  $(".pantoo").css("opacity", "1");
+  $(".pa").css("opacity", "0.5");
+});
+$(".papa, .white").mouseout(function(){
+  $(".pantoo").css("opacity", "0");
+  $(".pa").css("opacity", "1");
+
+});
+
+$(".gregre, .grenoo").mouseover(function(){
+  $(".greenoo").css("opacity", "1");
+  $(".gree").css("opacity", "0.5");
+});
+$(".gregre, .grenoo").mouseout(function(){
+  $(".greenoo").css("opacity", "0");
+  $(".gree").css("opacity", "1");
+});
+
+$(".kuku, .kuzo").mouseover(function(){
+  $(".kuzoo").css("opacity", "1");
+  $(".ku").css("opacity", "0.5");
+});
+$(".kuku, .kuzo").mouseout(function(){
+  $(".kuzoo").css("opacity", "0");
+  $(".ku").css("opacity", "1");
+});
+
+$(".diso, .didi").mouseover(function(){
+  $(".discoo").css("opacity", "1");
+  $(".dis").css("opacity", "0.5");
+});
+$(".diso, .didi").mouseout(function(){
+  $(".discoo").css("opacity", "0");
+  $(".dis").css("opacity", "1");
+});
+
+$(".co, .cece").mouseover(function(){
+  $(".coo").css("opacity", "1");
+  $(".ce").css("opacity", "0.5");
+});
+$(".co, .cece").mouseout(function(){
+  $(".coo").css("opacity", "0");
+  $(".ce").css("opacity", "1");
+});
+
+$(".cubeo, .cucu").mouseover(function(){
+  $(".gameoo").css("opacity", "1");
+  $(".cu").css("opacity", "0.5");
+});
+$(".cubeo, .cucu").mouseout(function(){
+  $(".gameoo").css("opacity", "0");
+  $(".cu").css("opacity", "1");
+});
+
+$(".stst, .sticko").mouseover(function(){
+  $(".stickoo").css("opacity", "1");
+  $(".sto").css("opacity", "0.5");
+});
+$(".stst, .sticko").mouseout(function(){
+  $(".stickoo").css("opacity", "0");
+  $(".sto").css("opacity", "1");
+});
+
+$(".koko, .kolizo").mouseover(function(){
+  $(".kolizoo").css("opacity", "1");
+  $(".kol").css("opacity", "0.5");
+});
+$(".koko, .kolizo").mouseout(function(){
+  $(".kolizoo").css("opacity", "0");
+  $(".kol").css("opacity", "1");
+});
+
+$(".homo, .hoho").mouseover(function(){
+  $(".homoo").css("opacity", "1");
+  $(".ho").css("opacity", "0.5");
+});
+$(".homo, .hoho").mouseout(function(){
+  $(".homoo").css("opacity", "0");
+  $(".ho").css("opacity", "1");
+});
+
+$(".clotho, .draggableble, .moveit, cloth").mouseover(function(){
+  $(".clothoo").css("opacity", "1");
+  $(".cloth").css("opacity", "0.5");
+});
+$(".homo, .hoho").mouseout(function(){
+  $(".clothoo").css("opacity", "0");
+  $(".cloth").css("opacity", "1");
+});
+
 
 
   $(".bog").mouseover(function() {
@@ -257,10 +424,10 @@ setTimeout(function(){
   });
 
 
-  $(".koko, .fire, .bog, .girl, .papa, .white, .vuvu, .gregre, .moveit, .draggableble, .hoho, .cece, .wow, .kuku").mouseover(function() {
+  $(".sticks, .disco, .koko, .fire, .bog, .girl, .papa, .white, .vuvu, .gregre, .moveit, .draggableble, .hoho, .cece, .wow, .kuku").mouseover(function() {
     $(".cursor").addClass("active");
   });
-  $(".koko, .fire, .bog, .girl, .papa, .white, .vuvu, .gregre, .moveit, .draggableble, .hoho, .cece, .wow, .kuku").mouseout(function() {
+  $(".sticks, .disco, .koko, .fire, .bog, .girl, .papa, .white, .vuvu, .gregre, .moveit, .draggableble, .hoho, .cece, .wow, .kuku").mouseout(function() {
     $(".cursor").removeClass("active");
   });
 
@@ -528,6 +695,9 @@ $(document).mousemove(function (event) {
 </div>
 
 <div class="panto">
+  <div class="pantoo">
+
+  </div>
 </div>
 
 <div class="sq papa">
@@ -538,6 +708,9 @@ $(document).mousemove(function (event) {
 </div>
 
 <div class="co">
+  <div class="coo">
+
+  </div>
 </div>
 
 <div class="sq cece">
@@ -562,6 +735,9 @@ $(document).mousemove(function (event) {
 
 
 <div class="kuzo">
+  <div class="kuzoo">
+
+  </div>
 </div>
 <div class="sq kuku">
   <div class="kuzn"></div>
@@ -571,6 +747,9 @@ $(document).mousemove(function (event) {
 </div>
 <div class="wow">
   <div class="cubo">
+    <div class=gameoo>
+
+    </div>
   </div>
   <!-- WOW -->
       <div class="cubeo"></div>
@@ -589,6 +768,9 @@ $(document).mousemove(function (event) {
 
 
 <div class="kolizo">
+  <div class="kolizoo">
+
+  </div>
 </div>
 
 <div class="sq koko">
@@ -601,7 +783,9 @@ $(document).mousemove(function (event) {
 
 
 <div class="homo">
+<div class="homoo">
 
+</div>
 </div>
 <div class="sq hoho">
   <div class="houses"></div>
@@ -611,7 +795,9 @@ $(document).mousemove(function (event) {
 </div>
 
 <div class="sticko">
+<div class="stickoo">
 
+</div>
 </div>
 <div class="sq stst">
 <div class="sticks">
@@ -631,22 +817,26 @@ $(document).mousemove(function (event) {
 </div>
 
 <div class="greeno">
+<div class="greenoo">
 
+</div>
 </div>
 <div class="sq gregre">
-  <div class="green">
-    <div class="leafone"></div>
-    <div class="leaftwo"></div>
+  <div class="greenarea">
+    <div class="green">
+      <div class="leafone"></div>
+      <div class="leaftwo"></div>
+    </div>
   </div>
-  <!-- <div class="oval gree">
+  <div class="oval gree">
     <p>божественный<br>росток</p>
-  </div> -->
+  </div>
 </div>
-
 
 <div class="bogo">
-
+<div class="boo"></div>
 </div>
+
 <div class="sq bobo">
   <div class="bog"></div>
   <div class="oval bo">
@@ -656,7 +846,9 @@ $(document).mousemove(function (event) {
 
 
 <div class="diso">
+<div class="discoo">
 
+</div>
 </div>
 <div class="sq didi">
   <div class="disco"></div>
@@ -673,25 +865,62 @@ $(document).mousemove(function (event) {
   </div>
 </div>
 
+<div class="cows ah">
+  <div class="cow lol">
+  </div>
+  <div class="cow lal">
+  </div>
+  <div class="cow lel">
+  </div>
+</div>
+
+<div class="cows eh">
+  <div class="cow lol">
+  </div>
+  <div class="cow lal">
+  </div>
+  <div class="cow lel">
+  </div>
+</div>
+
+<div class="cows uh">
+  <div class="cow lol">
+  </div>
+  <div class="cow lal">
+  </div>
+  <div class="cow lel">
+  </div>
+</div>
+
 <div class="fire a"></div>
 <div class="f1o">
 <div class="f1oo"></div>
 </div>
 
 <div class="f2o">
+<div class="f2oo">
 
+</div>
 </div>
 <div class="f3o">
+<div class="f3oo">
 
+</div>
 </div>
 <div class="f4o">
+<div class="f4oo">
 
+</div>
 </div>
 <div class="f5o">
+<div class="f5oo">
 
 </div>
+</div>
 <div class="f6o">
+<div class="f6oo">
 
+</div>
 </div>
 <div class="fire b"></div>
 <div class="fire c"></div>
@@ -722,6 +951,11 @@ $(document).mousemove(function (event) {
 <!-- <div class="draggable">
 </div> -->
 
+<div class="clotho">
+<div class="clothoo">
+
+</div>
+</div>
 
     <div class="moveit">
       <div class="clothes"></div>
@@ -752,10 +986,22 @@ $(document).mousemove(function (event) {
   </div>
 <h2>Зона Венеры</h2>
 <div class="venusimg">
-
 </div>
 <p>Что может быть романтичнее ужина при свечах?<br> Верно, ничего.  Живое олицетворение любви&nbsp;—&nbsp;это античная богиня Венера. <br> Она же по&nbsp;совместительству еще&nbsp;и&nbsp;любимая женщина бога Вулкана.</p>
  <p>Древние римляне во время проведения фестиваля Вулканалия обыкновенно работали при&nbsp;свечах, вероятно, чтобы умилостивить главного виновника торжества.  Мы в&nbsp;свою очередь предлагаем Вам отвлечься&nbsp;от работы и&nbsp;насладиться благотворным влиянием огня вместе со своей второй половинкой.</p>
+</div>
+
+<div class="info fest">
+  <div class="upperinfo">
+    <h1>Информация</h1>
+    <div class="crossarea">
+      <div class="cross"></div>
+    </div>
+  </div>
+<h2>Зона Венеры</h2>
+<div class="festimg">
+</div>
+ <p>«Vulcanalia» — ежегодный фестиваль, который проводился в Древнем Риме каждое 23 августа. <br> Это был праздник плодородия и любви, отдыха и работы, жизни и смерти одновеременно. Также Vulcanalia был праздником урожая. Мы, в «Boomshh» решили устроить для вас этот фестиваль, потому что его тема и обычаи, связанные с ним, тесно связаны с нашим рестораном. Давайте восхвалять еду и вулканы вместе! </p>
 </div>
 
 <div class="cursor normal"></div>
