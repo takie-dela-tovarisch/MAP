@@ -375,7 +375,37 @@ top: 62.3vh;
     top: 0.1vw;
 }
 .sidepannel {
-  /* position: fixed; */
+  left: -17px;
+    top: 139px;
+}
+.koko {
+    bottom: 60.7vh;
+    right: 151.2vw;
+}
+.e {
+  width: 17.11vw;
+    height: 22.97vw;
+    right: 45.3%;
+    top: 78%;
+}
+.f {
+    left: 36.5%;
+    top: 60.6%;
+    width: 15.11vw;
+    height: 20.97vw;
+}
+.b {
+    left: 4.7%;
+    top: 53.5%;
+    width: 15.49vw;
+    height: 20.50vw;
+}
+.d {
+  display: none;
+}
+.koliz {
+  width: 37.20vw;
+    height: 37.08vw;
 }
 .cursor, #line, #line2, .km {
   display: none;
